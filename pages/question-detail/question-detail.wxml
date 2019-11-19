@@ -1,0 +1,35 @@
+<scroll-view scroll-y style="height:{{height + 'rpx'}}"
+    bindscrolltolower="getAnsters"
+    enable-back-to-top = "{{true}}"
+>
+<view style="height:22rpx;"></view>
+<view class='head'>
+    <view class='avatar-wrap'>
+        <image class='avatar' src='{{q_info.image}}'></image>
+        <view class='user'>{{q_info.nickname}}</view>
+        <view class='date'>{{q_info.createtime}}</view>
+    </view>
+    <view class='question-wrap'>
+        <image class='icon' src='../../images/question.png'></image>
+        <view class='question'>{{q_info.name}}</view>
+    </view>
+</view>
+<view class='amount'>{{q_info.count_text}} 人回答问题</view>
+<view class='item' wx:for='{{list}}' bindtap='open' wx:key="{{index}}">
+    <view class='avatar-wrap'>
+        <image class='avatar' src='{{item.user_info.image}}'></image>
+        <view class='user'>{{item.user_info.nickname}}</view>
+    </view>
+    <view class='answer-wrap'>
+        <image class='icon' src='../../images/answer.png'></image>
+        <view class='answer'>{{item.anster}}</view>
+    </view>
+    <view class='time'>{{item.createtime}}</view>
+</view>
+<view style='height:20rpx'></view>
+<i-load-more tip="{{tip}}" loading="{{ loading }}" />
+</scroll-view>
+<view class='bottom'>
+    <textarea fixed='true' contenteditable="true" contenteditable="true" auto-height="true"  class='input' placeholder='请输入你的回答' value='{{anster}}' cursor-spacing="10" bindinput="bindKeyInput"></textarea>
+    <view class='btn' catchtap='addAnswer'>发送</view>
+</view>

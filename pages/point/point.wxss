@@ -1,0 +1,53 @@
+.item {
+    display: flex;
+    align-items: center;
+    padding: 30rpx 41rpx 25rpx 36rpx;
+}
+
+.line {
+    height: 18rpx;
+    background-color: #fafafa;
+}
+
+.rank {
+    width: 54rpx;
+    height: 65rpx;
+    line-height: 65rpx;
+    text-align: center;
+}
+
+.icon {
+    width: 54rpx;
+    height: 65rpx;
+}
+
+.info {
+    flex: 1;
+    margin-left: 26rpx;
+}
+
+.avatar {
+    width: 74rpx;
+    height: 74rpx;
+    margin-left: 38rpx;
+    border-radius: 50%;
+    background-color: #fbfbfb;
+}
+
+.grade {
+    line-height: 36rpx;
+    font-size: 25rpx;
+    color: #c9d2d8;
+}
+
+.name {
+    line-height: 43rpx;
+    font-size: 30rpx;
+    color: #303030;
+}
+
+.point {
+    line-height: 45rpx;
+    font-size: 33rpx;
+    color: #303030;
+}

@@ -1,0 +1,12 @@
+<view class='title'>北京希望之星学校客户端</view>
+<view class='blank'>
+    <view class='label'>
+      <image src="../../images/school.png"></image>
+    </view>
+    <input placeholder-class='plc' placeholder='请在次处输入您的学校名称' bindinput="watchInput"></input>
+</view>
+<view class="list">
+    <view class="item">清华大学</view>
+    <view class="item">北京大学</view>
+</view>
+<view class='{{isValue?"btn1":"btn"}}' bindtap='submit'>提交入驻申请</view>

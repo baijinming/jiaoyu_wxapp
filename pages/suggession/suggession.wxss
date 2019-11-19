@@ -1,0 +1,26 @@
+/* pages/suggession/suggession.wxss */
+.sug-class {
+  padding: 20rpx 40rpx;
+  display:flex;
+  justify-content:center;
+
+}
+
+.place-class {
+  font-size:30rpx;
+  font-weight:400;
+  color:rgba(151,151,151,1);
+}
+.suggession {
+  background:rgba(219,219,219,0.1);
+}
+.button-su {
+  width:391rpx;
+  height:91rpx;
+  background:linear-gradient(135deg,rgba(111,190,255,1) 0%,rgba(60,137,255,1) 100%);
+  border-radius:11px;
+  color:#fff;
+  margin:300rpx auto 0rpx;
+  line-height: 91rpx;
+  text-align: center;
+}

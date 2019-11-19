@@ -1,0 +1,15 @@
+<text class="countdown-class" wx:if="{{normal == 'text'}}">
+  {{time}}
+</text>
+
+<view wx:elif="{{normal == 'room'}}">
+    <text class='time-text'>{{tempSpit[0]}}</text>
+    <text class='time-text'>{{tempSpit[1]}}</text>
+    <text class='dot'>:</text>
+    <text class='time-text'>{{tempSpit[2]}}</text>
+    <text class='time-text'>{{tempSpit[3]}}</text>
+    <text class='dot'>:</text>
+    <text class='time-text'>{{tempSpit[4]}}</text>
+    <text class='time-text'>{{tempSpit[5]}}</text>
+</view>
+

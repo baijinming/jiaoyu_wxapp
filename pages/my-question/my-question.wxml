@@ -1,0 +1,27 @@
+<scroll-view scroll-y style="height:{{height + 'rpx'}}"
+    bindscrolltolower="getList"
+    enable-back-to-top = "{{true}}"
+>
+    <view style="height:38rpx;">
+    </view>
+    <view class='item' wx:for='{{list}}' bindtap='open' data-id="{{item.id}}" wx:key="{{index}}">
+        <view class='question-wrap'>
+            <image class='icon' src='../../images/question.png'></image>
+            <view class='question'>{{item.name}}</view>
+        </view>
+        <view class='answer-wrap' wx:if="{{item.new_info !== null}}">
+            <image class='icon' src='../../images/answer.png'></image>
+            <view class='answer'>{{item.new_info.anster}}</view>
+        </view>
+        <view class='blank'>
+            <view>{{item.count_text}}人回答问题</view>
+            <view>{{item.createtime}}</view>
+        </view>
+    </view>
+    <view style='height:30rpx'></view>
+    <i-load-more tip="{{tip}}" loading="{{ loading }}" />
+</scroll-view>
+<view class='bottom'>
+    <input class='input' placeholder='向所有家长提出问题' value='{{value}}'   bindinput="bindKeyInput"></input>
+    <view class='btn' catchtap='submit'>提问</view>
+</view>

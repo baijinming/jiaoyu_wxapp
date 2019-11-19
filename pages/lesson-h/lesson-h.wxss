@@ -1,0 +1,150 @@
+.banner {
+    padding-bottom: 27rpx;
+    border-bottom: 18rpx solid #fafafa;
+}
+
+.swiper {
+    height: 283rpx;
+}
+
+.swiper-item {
+    box-sizing: border-box;
+    padding: 0 36rpx;
+}
+
+.swiper-item .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18rpx;
+    background-color: #fbfbfb;
+}
+
+.tabwrap {
+    width: 100%;
+    white-space: nowrap;
+    padding: 27rpx 0 9rpx;
+    background-color: #fff;
+    display:flex;
+    justify-content:space-around;
+
+}
+
+.tabwrap::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.tab {
+    display: inline-block;
+    margin: 0 25rpx;
+    line-height: 40rpx;
+    font-size: 29rpx;
+    color: #999;
+}
+
+.active {
+    font-weight: 700;
+    color: #3c89ff;
+}
+
+.lesson {
+    display: flex;
+    align-items: center;
+    margin-left: 30rpx;
+    padding: 27rpx 27rpx 27rpx 0;
+    border-bottom: 1px solid #fafafa;
+}
+
+.lesson:last-child {
+    border-bottom: none;
+}
+
+.lesson .img {
+    width: 200rpx;
+    height: 160rpx;
+    border-radius: 10rpx;
+    background: #fbfbfb;
+}
+
+.lesson .info {
+    flex: 1;
+    margin-left: 27rpx;
+}
+
+.lesson .name {
+    width: 450rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 38rpx;
+    font-size: 32rpx;
+    font-weight: 700;
+}
+
+.lesson .brief {
+  width: 450rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 18rpx;
+    line-height: 36rpx;
+    font-size: 25rpx;
+    color: #999;
+}
+
+.lesson .blank {
+    display: flex;
+    align-items: center;
+    margin-top: 18rpx;
+}
+
+.lesson .price {
+    line-height: 31rpx;
+    font-size: 31rpx;
+    font-weight: 700;
+    color: #e13434;
+}
+
+.lesson .price span {
+    font-size: 22rpx;
+}
+
+.lesson .free {
+    width: 47rpx;
+    height: 27rpx;
+    line-height: 27rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 18rpx;
+    border-radius: 13rpx 0 13rpx 0;
+    background: linear-gradient(180deg, rgba(245, 81, 95, 1) 0%, rgba(221, 0, 33, 1) 100%);
+}
+
+.lesson .cost {
+    margin-left: 7rpx;
+    line-height: 31rpx;
+    font-size: 22rpx;
+    text-decoration: line-through;
+    color: #979797;
+}
+
+.lesson .time {
+    flex: 1;
+    margin-left: 30rpx;
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #979797;
+}
+
+.lesson .amount {
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #979797;
+}
+
+.lesson .like {
+    width: 37rpx;
+    height: 37rpx;
+    margin-left: 18rpx;
+}

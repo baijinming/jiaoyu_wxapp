@@ -1,0 +1,19 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='head'>
+    <view class='img'>
+        <image src='{{info.image}}' class='img'></image>
+    </view>
+    <view class='info'>
+        <view class='title'>{{info.name}}</view>
+        <view class='brief'>{{info.introduce}}</view>
+    </view>
+</view>
+<view class='content'>
+    <view class='price'>¥{{info.price}}</view>
+    <view class='sale'>{{info.buy_numbers}} 人买过</view>
+    <view class='tit'>简介</view>
+    <view class='texe'>
+       <template is="wxParse" data="{{wxParseData:introduce.nodes}}"/>
+    </view>
+</view>
+<view wx:if="{{info.is_buy != 1}}" class='btn' bindtap='buy'>立即购买</view>

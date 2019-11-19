@@ -1,0 +1,5 @@
+<view>
+  <chat-title></chat-title>
+  <chat-swifter></chat-swifter>
+  <chat-popup> </chat-popup>
+</view>

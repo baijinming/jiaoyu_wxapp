@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "会话页面",
+  "usingComponents": {
+    "chat-title": "/component/chat/title",
+    "chat-popup": "/component/chat/before",
+    "chat-listeners": "/component/chat/listeners-input",
+    "chat-scrollmessage": "/component/chat/scrollmessage"
+  }
+}

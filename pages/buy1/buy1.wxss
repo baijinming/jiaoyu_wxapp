@@ -1,0 +1,92 @@
+.title {
+    margin-bottom: 53rpx;
+    padding-top: 132rpx;
+    line-height: 45rpx;
+    font-size: 33rpx;
+    font-weight: 700;
+    color: #303030;
+    text-align: center;
+}
+
+.label {
+    margin-left: 136rpx;
+    line-height: 36rpx;
+    font-size: 25rpx;
+}
+
+.blank {
+    display: flex;
+    align-items: center;
+    padding: 0 45rpx;
+    margin-bottom: 60rpx;
+    color: #999;
+}
+
+.icon {
+    width: 65rpx;
+    height: 65rpx;
+}
+
+.gender {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 24rpx;
+    height: 65rpx;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.plc {
+    color: #303030;
+}
+
+.text {
+    margin-right: 65rpx;
+    font-size: 25rpx;
+}
+
+.btn {
+    width: 112rpx;
+    height: 47rpx;
+    margin-right: 30rpx;
+    line-height: 47rpx;
+    text-align: center;
+    font-size: 25rpx;
+    color: #4694ff;
+    border-radius: 4rpx;
+    border: 2rpx solid;
+    border-image: linear-gradient(135deg, rgba(111, 190, 255, 1), rgba(60, 137, 255, 1)) 2 2;
+}
+
+.active {
+    color: #fff;
+    background: linear-gradient(135deg, rgba(111, 190, 255, 1) 0%, rgba(60, 137, 255, 1) 100%);
+}
+
+input {
+    flex: 1;
+    height: 65rpx;
+    margin-left: 24rpx;
+    line-height: 65rpx;
+    font-size: 25rpx;
+    color: #999;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.pay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 750rpx;
+    height: 98rpx;
+    font-size: 34rpx;
+    line-height: 98rpx;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(111, 190, 255, 1) 0%, rgba(60, 137, 255, 1) 100%);
+}

@@ -1,0 +1,108 @@
+page {
+  background-color: #fafafa;
+}
+
+.swiper {
+  height: 308rpx;
+}
+
+.swiper-item {
+  box-sizing: border-box;
+  padding: 0 34rpx;
+}
+
+.swiper-item .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+  background-color: #fbfbfb;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 36rpx;
+}
+
+.title .icon {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.title .text {
+  margin-left: 7rpx;
+  line-height: 43rpx;
+  font-size: 31rpx;
+  font-weight: 700;
+  color: #303030;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  border-radius: 20rpx;
+  padding: 22rpx 49rpx 22rpx 36rpx;
+  margin-bottom: 18rpx;
+  background: rgba(255, 255, 255, 1);
+}
+
+.item .img {
+  width: 200rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  background-color: #fbfbfb;
+}
+
+.info {
+  flex: 1;
+  margin-left: 22rpx;
+}
+
+.name {
+  padding-top: 7rpx;
+  line-height: 38rpx;
+  font-size: 30rpx;
+  color: #303030;
+  width: 460rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.brief {
+  margin-top: 18rpx;
+  line-height: 33rpx;
+  font-size: 24rpx;
+  color: #999;
+  width: 460rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blank {
+  display: flex;
+  align-items: center;
+  margin-top: 13rpx;
+}
+
+.user {
+  flex: 1;
+  line-height: 33rpx;
+  font-size: 24rpx;
+  color: #303030;
+}
+
+.price {
+  margin-right: 14rpx;
+  line-height: 43rpx;
+  font-size: 31rpx;
+  font-weight: 700;
+  color: #f42900;
+}
+
+.sales {
+  line-height: 25rpx;
+  font-size: 18rpx;
+  color: #999;
+}

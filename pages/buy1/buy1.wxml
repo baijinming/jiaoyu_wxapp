@@ -1,0 +1,52 @@
+<scroll-view scroll-y style="height:{{height + 'rpx'}}"
+    >
+  <view class='title'>
+     {{name}}
+  </view>
+  <view class='label'>联系人</view>
+  <view class='blank'>
+      <image class='icon' src='../../images/buy-name.png'></image>
+      <input placeholder-class='plc' placeholder='请输入联系人姓名' value='{{data.name}}' bindinput='changeName'></input>
+  </view>
+  <view class='label'>生日</view>
+  <view class='blank'>
+      <image class='icon' src='../../images/buy-age.png'></image>
+      <input placeholder-class='plc' placeholder='请输入生日例：2019-01-04'  bindfocus="choosedate" value='{{data.birthday}}' bindinput='changeBirthday'></input>
+  </view>
+  <view class='label'>性别</view>
+  <view class='blank'>
+      <image class='icon' src='../../images/buy-gender.png'></image>
+      <view class='gender'>
+          <view class='text'>请选择联系人性别</view>
+          <view class='btn {{data.sex== 1 ? "active": ""}}' catchtap='changeSex' data-type = "{{1}}">男</view>
+          <view class='btn {{data.sex== 2 ? "active": ""}}' catchtap='changeSex' data-type = "{{2}}">女</view>
+      </view>
+  </view>
+  <view class='label'>身高</view>
+  <view class='blank'>
+      <image class='icon' src='../../images/buy-age.png'></image>
+      <input placeholder-class='plc' placeholder='请输入身高（单位cm）' value='{{data.height}}' bindinput='changeHeight' type='number'></input>
+  </view>
+  <view class='label'>体重</view>
+  <view class='blank'>
+      <image class='icon' src='../../images/buy-age.png'></image>
+      <input placeholder-class='plc' placeholder='请输入体重(单位kg）'  value='{{data.weight}}' bindinput='changeWeight' type='number'></input>
+  </view>
+  <view class='label'>联系方式</view>
+  <view class='blank'>
+      <image class='icon' src='../../images/buy-tel.png'></image>
+      <input placeholder-class='plc' placeholder='请输入联系方式' value='{{data.mobile}}' bindinput='changeMobile' type='number'></input>
+  </view>
+</scroll-view>
+<view class='pay' bindtap='pay'>开始测评</view>
+<van-popup  position="bottom" show="{{ show }}">
+    <van-datetime-picker
+      type="date"
+      value="{{ currentDate }}"
+      min-date="{{ minDate }}"
+      max-date="{{ maxDate }}"
+      bind:input="onInput"
+      bind:cancel="cancel"
+      bind:confirm="confirm"
+    />
+</van-popup>

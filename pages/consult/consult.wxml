@@ -1,0 +1,29 @@
+<view>
+  <!-- <scroll-view scroll-y style="height:{{height + 'rpx'}}" bindscrolltolower="scroll" enable-back-to-top="{{true}}">
+    <view style='height:33rpx;'></view>
+    <view class='item' wx:for='{{list}}' bindtap='open' data-id="{{item.id}}" wx:key="{{index}}">
+      <view class='title'>
+        <image class='icon' src='../../images/notice.png'></image>
+        <view class='text'>{{item.name}}</view>
+      </view>
+      <image class='img' src='{{item.image}}'>
+        <view class='name'>{{item.introduce}}</view>
+      </image>
+    </view>
+
+    <i-load-more tip="{{tip}}" loading="{{ loading }}" />
+  </scroll-view> -->
+
+  <view style='height:33rpx;'></view>
+  <view class='item' wx:for='{{list}}' bindtap='open' data-id="{{item.id}}" wx:key="{{index}}">
+    <view class='title'>
+      <image class='icon' src='../../images/notice.png'></image>
+      <view class='text'>{{item.name}}</view>
+    </view>
+    <image class='img' src='{{item.image}}'>
+      <view class='name'>{{item.introduce}}</view>
+    </image>
+  </view>
+
+  <i-load-more tip="{{tip}}" loading="{{ loading }}" />
+</view>

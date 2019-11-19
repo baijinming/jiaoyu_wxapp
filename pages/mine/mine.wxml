@@ -1,0 +1,63 @@
+<view class='top'>
+    <image src='{{user.avatar}}' class='avatar'></image>
+    <view class='info'>
+        <view class='name'>{{user.nickname}}</view>
+        <view class='id-wrap'>
+            <view class='id'>ID：{{user.id}}</view>
+            <view class='copy' bindtap='copy'>复制</view>
+        </view>
+    </view>
+    <image bindtap='handleSetting' class='setting' src='../../images/setting.png'></image>
+</view>
+<view class='hmenu'>
+    <navigator hover-class="none" url='/pages/my-question/my-question' class='item'>
+        <image class='icon' src='../../images/mine-1.png'></image>
+        <view class='text'>我的问答</view>
+    </navigator>
+    <navigator hover-class="none" url='/pages/point/point' class='item'>
+        <image class='icon' src='../../images/mine-h2.png'></image>
+        <view class='text'>我的积分</view>
+    </navigator>
+    <navigator hover-class="none" url='/pages/coupon/coupon' class='item'>
+        <image class='icon' src='../../images/mine-h3.png'></image>
+        <view class='text'>我的优惠券</view>
+    </navigator>
+</view>
+<view class='history'>
+    <view class='title-wrap'>
+        <view class='title'>听课历史</view>
+        <view class='more' bindtap='jump'>查看更多</view>
+        <image class='icon' src='../../images/more.png' bindtap='jump'></image>
+    </view>
+    <scroll-view scroll-x class='wrap'>
+        <view class='item' wx:for="{{history}}">
+            <view class='img'>
+                <image class='img' src='{{item.image}}'> </image>
+            </view>
+            <view class='brief'>{{item.name}}</view>
+        </view>
+    </scroll-view>
+</view>
+<view class='vmenu'>
+    <navigator hover-class='none' url='/pages/my-evaluation/my-evaluation' class='menu'>
+        <image class='icon' src='../../images/mine-2.png'></image>
+        <view class='blank'>
+            <view class='text'>我的测评</view>
+            <image class='more' src='../../images/more.png'></image>
+        </view>
+    </navigator>
+    <navigator hover-class='none' url='/pages/my-consult/my-consult' class='menu'>
+        <image class='icon' src='../../images/mine-3.png'></image>
+        <view class='blank'>
+            <view class='text'>我的咨询</view>
+            <image class='more' src='../../images/more.png'></image>
+        </view>
+    </navigator>
+    <navigator hover-class='none' url='/pages/my-lesson/my-lesson' class='menu'>
+        <image class='icon' src='../../images/mine-4.png'></image>
+        <view class='blank'>
+            <view class='text'>我的课程</view>
+            <image class='more' src='../../images/more.png'></image>
+        </view>
+    </navigator>
+</view>

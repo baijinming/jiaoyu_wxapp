@@ -1,0 +1,18 @@
+<view class='wrap'>
+  <view class='meswrap' wx:for="{{listeners}}" hidden="{{!checked}}" wx:key="index">
+    <view class='text'>{{item.content}}</view>
+    <image  src='{{item.headUrl}}' class='avatar'></image>
+  </view>
+  <view class='switch-wrap'>
+    <van-switch checked="{{ checked }}" bind:change="onChange" size="30rpx"/>
+  </view>
+</view> 
+<!-- <view class='wrap' hidden="{{auth == 3 }}">
+  <view class='left-meswrap' wx:for="{{listeners}}" hidden="{{!checked}}" wx:key="index">
+    <image  src='{{item.headUrl}}' class='avatar'></image>
+    <view class='text'>{{item.content}}</view>
+  </view>
+  <view class='left-switch-wrap'>
+    <van-switch checked="{{ checked }}" bind:change="onChange" size="30rpx"/>
+  </view>
+</view>  -->

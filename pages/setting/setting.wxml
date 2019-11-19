@@ -1,0 +1,19 @@
+<view class='wrap'>
+  <view class='menu' bindtap='open' data-type="3">
+    <view class='text'>绑定账号</view>
+    <image class='more' src='../../images/more.png' bindtap='open' data-type="2"></image>
+  </view>
+  <view class='menu' bindtap='open' data-type="2">
+    <view class='text'>意见反馈</view>
+    <image class='more' src='../../images/more.png' bindtap='open' data-type="2"></image>
+  </view>
+  <view class='menu' bindtap='open' data-type="0">
+    <view class='text'>关于学校</view>
+    <image class='more' src='../../images/more.png'></image>
+  </view>
+  <view class='menu' bindtap='open' data-type="1">
+    <view class='text'>联系我们</view>
+    <image class='more' src='../../images/more.png'></image>
+  </view>
+</view>
+<view class='signout' catchtap='logout'>退出登录</view>

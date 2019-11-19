@@ -1,0 +1,105 @@
+{
+  "pages": [
+    "pages/choose-school/index2",
+    "pages/choose-school/index",
+    "pages/index/index",
+    "pages/apply/apply",
+    "pages/login/login",
+    "pages/consult/consult",
+    "pages/evaluation/evaluation",
+    "pages/live/live",
+    "pages/mine/mine",
+    "pages/message/message",
+    "pages/search/search",
+    "pages/coupon/coupon",
+    "pages/point/point",
+    "pages/setting/setting",
+    "pages/my-lesson/my-lesson",
+    "pages/my-evaluation/my-evaluation",
+    "pages/my-consult/my-consult",
+    "pages/my-question/my-question",
+    "pages/question/question",
+    "pages/question-detail/question-detail",
+    "pages/activity/activity",
+    "pages/activity-detail/activity-detail",
+    "pages/evaluation-detail/evaluation-detail",
+    "pages/buy1/buy1",
+    "pages/buy2/buy2",
+    "pages/lesson-h/lesson-h",
+    "pages/lesson-v/lesson-v",
+    "pages/lesson-play/lesson-play",
+    "pages/consult-detail/consult-detail",
+    "pages/teacher/teacher",
+    "pages/lesson-detail/lesson-detail",
+    "pages/series/series",
+    "pages/series-play/series-play",
+    "pages/advance/advance",
+    "pages/before-room/before-room",
+    "pages/hot-course/hot-course",
+    "pages/search-course/search-course",
+    "pages/web-show/web-show",
+    "pages/chat/chat",
+    "pages/write-info/write-info",
+    "pages/chat-room/chat",
+    "component/chat/swifter",
+    "component/chat/scroll",
+    "component/chat-room/chat-item/chat-item",
+    "component/chat/before",
+    "component/chat/listeners-input",
+    "component/chat/scrollmessage",
+    "pages/suggession/suggession",
+    "pages/history/history",
+    "pages/evalution-answer/answer",
+    "pages/result/result",
+    "pages/chat-history/history",
+    "pages/coupon-detail/coupon-detail",
+    "pages/chat/consult",
+    "pages/rich-text/rich-text",
+    "pages/bind-account/bind-account"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#DBDBDB",
+    "selectedColor": "#3C89FF",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index-focus1.png",
+        "selectedIconPath": "images/index-focus.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/consult/consult",
+        "iconPath": "images/consult1.png",
+        "selectedIconPath": "images/consult-focus.png",
+        "text": "咨询"
+      },
+      {
+        "pagePath": "pages/evaluation/evaluation",
+        "iconPath": "images/evaluation1.png",
+        "selectedIconPath": "images/evaluation-focus.png",
+        "text": "测评"
+      },
+      {
+        "pagePath": "pages/live/live",
+        "iconPath": "images/live1.png",
+        "selectedIconPath": "images/live-focus.png",
+        "text": "直播间"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine1.png",
+        "selectedIconPath": "images/mine-focus.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

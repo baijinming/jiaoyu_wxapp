@@ -1,0 +1,35 @@
+<view class='buyer'>
+    <view class='left'>
+        <view class='name'>东郭先生</view>
+        <view class='id'>ID:5289025</view>
+    </view>
+    <image class='more' src='../../images/more.png'></image>
+</view>
+<view class='goods'>
+    <view class='img'></view>
+    <view class='name'>法语语音入门学习- 同步大学</view>
+    <view class='num'>共3种</view>
+    <image class='more' src='../../images/more.png'></image>
+</view>
+<view class='blank'>
+    <view class='label'>商品总额</view>
+    <view class='total'>¥77.00</view>
+</view>
+<view class='blank'>
+    <view class='label'>优惠券</view>
+    <image class='more' src='../../images/more.png'></image>
+</view>
+<view class='paytype'>
+    <view class='tit'>支付方式</view>
+    <view class='wxpay'>
+        <image class='wx' src='../../images/wx.png'></image>
+        <view class='text'>微信支付</view>
+        <image class='check' src='../../images/check.png'></image>
+    </view>
+</view>
+<view class='footer'>
+    <view class='price'>实付款：
+        <span>¥77.70</span>
+    </view>
+    <view class='pay'>确认支付</view>
+</view>

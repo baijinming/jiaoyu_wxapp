@@ -1,0 +1,19 @@
+<view class='banner'></view>
+<view class='catalog'>
+    <view class='ctit'>第一章 基础阶段</view>
+    <view class='item' wx:for='{{[1,2,3]}}' bindtap='open'>
+        <view class='img'></view>
+        <view class='info'>
+            <view class='lname'>{{item}}.核心语法：19将掌握篇章结构与时态</view>
+            <view class='long'>03:00:00</view>
+        </view>
+    </view>
+    <view class='ctit'>第二章 强化训练</view>
+    <view class='item' wx:for='{{[1,2]}}' bindtap='open'>
+        <view class='img'></view>
+        <view class='info'>
+            <view class='lname'>{{item}}.核心语法：19将掌握篇章结构与时态</view>
+            <view class='long'>03:00:00</view>
+        </view>
+    </view>
+</view>

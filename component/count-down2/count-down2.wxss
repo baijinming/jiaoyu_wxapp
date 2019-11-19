@@ -1,0 +1,53 @@
+.container {
+  background-color: #f6f6f6;
+  width: 600rpx;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+  margin: 0 auto
+}
+
+.time-number {
+  display: flex;
+  justify-content: center;
+
+}
+
+.time-number-item {
+  width: 50rpx;
+  height: 80rpx;
+  color: #338CFD;
+  font-size: 32rpx;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 0 6rpx;
+  background: linear-gradient(#fff, #ddd);
+  border-radius: 4rpx;
+}
+
+.point-group {
+  padding: 20rpx 10rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.point-group view {
+  width: 8rpx;
+  height: 8rpx;
+  background-color: #338CFD;
+  border-radius: 50%;
+}
+
+.word-group {
+  color: #666;
+  font-size: 22rpx;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.word-group view {
+  width: 150rpx;
+}

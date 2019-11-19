@@ -1,0 +1,31 @@
+<view class='title'>{{info.name}}</view>
+<!-- <view class='de-wrap'>
+  <text class='teacher'>主讲人：{{info.talk_name}}</text>
+  <text class='date'>讲课时间：{{info.chat_time}}</text>
+</view> -->
+<view class='banner'>
+  <image class='banner' src='{{info.image}}'></image>
+</view>
+<view class='blank'>
+    <view class='left'>正在播放{{info.name}}</view>
+</view>
+<view class='progress'>
+    <view class='text'>{{currentTime}}</view>
+    <progress class="audio-progress" percent="{{percent}}" border-radius="2" stroke-width="4" color="#3c89ff" activeColor="#3c89ff" backgroundColor="" bindtouchstart="touchSeek">
+      <view class="circular-icon" style="left: {{left}}rpx"></view>
+    </progress>
+    <view class='text'>{{duration}}</view>
+</view>
+<view class='btn-wrap'>
+    <image bindtap="backSeek" data-time="15" class='s' src='../../images/play-1.png'></image>
+    <!-- <image wx:if="{{index == 0}}" class='m' src='../../images/play-2.png'></image>
+    <image wx:else class='m' src='../../images/play-4.png' style="transform:rotate(180deg)"></image> -->
+    <image wx:if="{{!isPlaying}}" bindtap="play" class='b' src='../../images/play.png'></image>
+    <image wx:else bindtap="pause" class='b' src='../../images/pause.png'></image>
+    <!-- <image bindtap="goNext" wx:if="{{index + 1 < chapter.length}}" class='m' src='../../images/play-4.png'></image>
+    <image wx:else class='m' src='../../images/play-2.png' style="transform:rotate(180deg)"></image> -->
+    <image bindtap="goSeek" data-time="15" class='s' src='../../images/play-5.png'></image>
+</view>
+<!-- <view class="" catchtap="tohistory">查看回放</view> -->
+
+<audio src="{{src}}" id="myAudio" bindtimeupdate="timeupdate"/>

@@ -1,0 +1,7 @@
+<view class='banner'>
+    <swiper class='swiper' interval='5000' circular autoplay>
+        <swiper-item class='swiper-item' wx:for='{{[1,2,3]}}' wx:key="{{index}}">
+            <image src='http://jiaoyu.tsingc.com/uploads/20190805/13d9bf043c5aeb9478379e6d17f0e74f.png' class='img'> </image>
+        </swiper-item>
+    </swiper>
+</view>

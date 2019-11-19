@@ -1,0 +1,194 @@
+page {
+    height: 100%;
+}
+
+.wrap {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.left {
+    min-height: 100%;
+    width: 161rpx;
+    background-color: #fafafa;
+}
+
+.tab {
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-size: 25rpx;
+    color: #303030;
+}
+
+.active {
+    position: relative;
+    font-weight: 700;
+    color: #3c89ff;
+    background-color: #fff;
+}
+
+.active::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 32rpx;
+    width: 5rpx;
+    height: 22rpx;
+    background: rgba(60, 137, 255, 1);
+}
+
+.right {
+    flex: 1;
+    height: 100%;
+    padding-left: 30rpx;
+    background-color: #fff;
+}
+
+.teacher {
+    display: flex;
+    width: 531rpx;
+    height: 181rpx;
+    padding: 24rpx;
+    border-radius: 18rpx;
+    background: linear-gradient(180deg, rgba(111, 190, 255, 0.4) 0%, rgba(60, 137, 255, 0.09) 100%);
+}
+
+.avatar {
+    width: 94rpx;
+    height: 94rpx;
+    border-radius: 50%;
+    border: 4rpx solid #fff;
+    background-color: #fbfbfb;
+}
+
+.tinfo {
+    flex: 1;
+    margin-left: 20rpx;
+}
+
+.tname {
+    line-height: 36rpx;
+    font-size: 28rpx;
+    font-weight: 700;
+    color: #303030;
+}
+
+.tbrief {
+    margin-top: 7rpx;
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #303030;
+}
+
+.bot {
+    display: flex;
+    margin-top: 8rpx;
+}
+
+.badge {
+    width: 26rpx;
+    height: 26rpx;
+}
+
+.intor {
+    width: 266rpx;
+    line-height: 25rpx;
+    font-size: 18rpx;
+    color: #303030;
+}
+
+.item {
+    display: flex;
+    border-bottom: 1px solid #fafafa;
+    padding-right: 24rpx;
+    padding-top: 33rpx;
+    padding-bottom: 24rpx;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.img {
+    width: 140rpx;
+    height: 112rpx;
+    border-radius: 11rpx;
+    background: #fbfbfb;
+}
+
+.info {
+    flex: 1;
+    margin-left: 25rpx;
+}
+
+.name {
+    line-height: 38rpx;
+    font-size: 27rpx;
+    font-weight: 700;
+    color: #303030;
+    overflow: hidden;
+    width: 370rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.brief {
+    overflow: hidden;
+    width: 370rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #999;
+}
+
+.long {
+    /* margin-top: 16rpx; */
+    line-height: 25rpx;
+    font-size: 22rpx;
+    color: #999;
+}
+
+.blank {
+    display: flex;
+    align-items: center;
+    margin-top: 13rpx;
+}
+
+.price {
+    line-height: 31rpx;
+    font-size: 22rpx;
+    font-weight: 700;
+    color: #e13434;
+}
+
+.price span {
+    font-size: 31rpx;
+}
+
+.cost {
+    flex: 1;
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #979797;
+}
+
+.sales {
+    margin-right: 26rpx;
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #979797;
+}
+
+.icon {
+    width: 36rpx;
+    height: 36rpx;
+}
+
+.amount {
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #979797;
+}

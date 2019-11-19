@@ -1,0 +1,41 @@
+<view style="height:30rpx"></view>
+<view class='banner'>
+    <swiper class='swiper' interval='2000' circular autoplay>
+        <swiper-item class='swiper-item' wx:for='{{banners}}' wx:key="{{index}}">
+            <image class='img' src='{{item.imageurl}}'></image>
+        </swiper-item>
+    </swiper>
+</view>
+<view class='tabwrap' scroll-x>
+    <view class='tab {{tabIdx==item.type?"active":""}}' bindtap='handleTab' data-idx='{{item.type}}' wx:for='{{tab}}' wx:key = "{{index}}" data-type="{{item.type}}">{{item.name}}</view>
+</view>
+ <scroll-view scroll-y style="height:{{(height-20) + 'rpx'}}"
+    bindscrolltolower="getList"
+    enable-back-to-top = "{{true}}"
+ >
+    <view class='lesson' wx:for="{{list}}" bindtap='open' data-course_id = "{{item.id}}" wx:key="{{index}}">
+        <view class='img'>
+            <image src='{{item.image}}' class='img'></image>
+        </view>
+        <view class='info'>
+            <view class='name'>{{item.name}}</view>
+            <view class='brief'>{{item.introduce}}</view>
+            <view class='blank'>
+                <block wx:if="{{item.price > 0}}">
+                    <view class='price'>
+                        <span>¥</span>{{item.price}}
+                    </view>
+                    <view class='cost'>¥{{item.origin_price}}</view>
+                </block>
+                <view wx:else class='free'>
+                    免费
+                </view>
+                <view class='time'>{{item.chapters}}课</view>
+                <view class='amount'>{{item.buy_numbers}}人购买</view>
+                <image class='like' src='../../images/like.png'></image>
+                <view class='amount'>{{item.thumbs}}</view>
+            </view>
+        </view>
+    </view>
+    <i-load-more tip="{{tip}}" loading="{{ loading }}" />
+</scroll-view>    

@@ -1,0 +1,47 @@
+/* component/chat/scrollmessage.wxss */
+.wrap {
+  width: 350rpx;
+}
+.avatar {
+  width:60rpx;
+  height:60rpx;
+  border-radius:50%;
+  margin-left:6rpx;
+  margin-right:6rpx;
+
+}
+.meswrap {
+  display: flex;
+  align-items: center;
+  font-size:24rpx;
+  font-family:PingFangSC;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  justify-content:flex-end;
+}
+.left-meswrap {
+  display: flex;
+  align-items: center;
+  font-size:22rpx;
+  font-family:PingFangSC;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  justify-content:flex-start;
+}
+.text {
+  background:rgba(0,0,0,1);
+  opacity:0.6;
+  line-height:30rpx;
+  padding: 12rpx;
+  border-radius: 20rpx;
+}
+.switch-wrap {
+  display:flex;
+  justify-content:flex-end;
+  padding:18rpx 10rpx;
+}
+.left-switch-wrap {
+  display:flex;
+  justify-content:flex-start;
+  padding:18rpx 10rpx;
+}

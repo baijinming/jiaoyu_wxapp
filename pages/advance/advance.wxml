@@ -1,0 +1,57 @@
+<view wx:if="{{!isHost}}">
+  <import src="../../wxParse/wxParse.wxml" />
+  <view class='banner'>
+    <image class="live-bg" src="../../images/live_bg.png"></image>
+    <view class='state'>{{info.type == 0 ? '直播未开始' : (info.type== 1 ? '直播进行中' : '直播已结束')}}</view>
+    <view wx:if="{{info.type == 0}}" class='countdown'>
+      <image class="clock" src="../../images/clock.png"></image>
+      倒计时：
+      <i-count-down target="{{targetTime}}" countdown-class="big" clear-timer="{{clearTimer}}"></i-count-down>
+    </view>
+    <!-- <view wx:if="{{info.type == 0}}" class='remind'>开启提醒</view> -->
+  </view>
+  <view class='tit-wrap'>
+    <view class='left'>
+      <view class='title'>{{info.name}}</view>
+      <view class='intro'>
+        <text>主讲人：{{info.talk_info.nickname}}</text>
+        <text>直播时间： {{info.start_end[0]}}-{{info.start_end[1]}}</text>
+      </view>
+    </view>
+    <!-- <button open-type="share" class="share-btn">
+      <image class='share' src='../../images/share.png'></image>
+    </button> -->
+  </view>
+  <!-- <view class="head">
+    <view class='info'>
+      <view class='name'>{{info.talk_info['nickname']}}</view>
+      <view class='blank'>
+        <image class='icon' src='../../images/badge.png'></image>
+        <view class='text van-multi-ellipsis--l3'>{{info.talk_info['bio']}}</view>
+      </view>
+    </view>
+    <image class='avatar' src='{{info.talk_info.avatar}}'></image>
+  </view> -->
+  <view class='user'>适用对象：{{info.tag}}</view>
+  <view class='intro-wrap'>
+    <view class='name'>课程简介</view>
+  </view>
+  <!-- <view class='lbanner'></view> -->
+  <view class='lintro'>
+    <template is="wxParse" data="{{wxParseData:introduce.nodes}}" />
+  </view>
+  <view style='height:100rpx'></view>
+  <view class='btn' catchtap='enter'>进入直播间</view>
+</view>
+
+<view wx:else>
+  <view class="advance-name">{{info.name}}</view>
+  <view class="advance-time">直播计划开始时间：{{info.start_end[0]}}</view>
+  <view class="shadw-line"></view>
+  <view class="advance-text">直播倒计时</view>
+  <i-count-downTwo target="{{targetTime}}" countdown-class="big" clear-timer="{{clearTimer}}"></i-count-downTwo>
+  <view class="open-btn" bindtap="open">
+    <view>开放</view>
+    <view>直播间</view>
+  </view>
+</view> 

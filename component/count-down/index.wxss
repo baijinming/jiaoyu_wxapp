@@ -1,0 +1,24 @@
+.time-text {
+    width:62rpx;
+    height:101rpx;
+    background:linear-gradient(180deg,rgba(252,252,252,1) 0%,rgba(217,217,217,1) 100%);
+    border-radius:5rpx;
+    border:1px solid rgba(235,235,235,1);
+    font-size:56rpx;
+    font-family:PingFangSC-Medium;
+    font-weight:500;    
+    color:rgba(60,137,255,1);
+    padding: 14rpx;
+    margin-left: 4rpx;
+    margin-right: 4rpx;
+}
+.dot {
+    margin-left: 4rpx;
+    margin-right: 4rpx;
+    top:-10rpx;
+    color:rgba(60,137,255,1);
+    position: relative;
+    font-size:56rpx;
+    font-family:PingFangSC-Medium;
+    font-weight:500;  
+}

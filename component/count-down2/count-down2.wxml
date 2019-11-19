@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="time-number">
+    <view class="time-number-item">{{tempSpit[0]}}</view>
+    <view class="time-number-item">{{tempSpit[1]}}</view>
+    <view class="point-group">
+      <view></view>
+      <view></view>
+    </view>
+    <view class="time-number-item">{{tempSpit[2]}}</view>
+    <view class="time-number-item">{{tempSpit[3]}}</view>
+    <view class="point-group">
+      <view></view>
+      <view></view>
+    </view>
+    <view class="time-number-item">{{tempSpit[4]}}</view>
+    <view class="time-number-item">{{tempSpit[5]}}</view>
+  </view>
+  <view class="word-group">
+    <view>HOUR</view>
+    <view>MIN</view>
+    <view>SEC</view>
+  </view>
+</view> 

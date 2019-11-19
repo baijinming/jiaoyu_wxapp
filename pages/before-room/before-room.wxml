@@ -1,0 +1,25 @@
+<view>
+    <view class='wrap'>
+        <view class='title'>如何进行规划</view>
+        <view class='time'>直播计划开始时间：11：12</view>
+    </view>
+
+    <view class='mid'>
+        <view class='mid-title'>直播倒计时</view>
+        <view class='mid-time'>
+           <i-count-down
+                target="{{targetTime}}"
+                countdown-class="big"
+                clear-timer="{{clearTimer}}"
+                normal = "room"
+            ></i-count-down>
+        </view>
+    </view>
+
+    <view class='bottom' catchtap='open' data-id="{{info.id}}">
+        <view>
+            <view class='text'>开放</view>
+            <view class='text'>直播间</view>
+        </view>
+    </view>
+</view>

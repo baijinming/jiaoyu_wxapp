@@ -1,0 +1,51 @@
+page {
+    position: relative;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+.wrap {
+    background-color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60rpx;
+    padding-right: 20rpx;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+    border-bottom: 1px solid #fafafa;
+}
+
+.menu:last-child {
+    border-bottom: none;
+}
+
+.text {
+    line-height: 40rpx;
+    font-size: 29rpx;
+    color: #303030;
+}
+
+.more {
+    width: 36rpx;
+    height: 36rpx;
+}
+
+.signout {
+    position: absolute;
+    bottom: 200rpx;
+    left: 50%;
+    width: 390rpx;
+    height: 90rpx;
+    margin-left: -195rpx;
+    text-align: center;
+    line-height: 90rpx;
+    font-size: 31rpx;
+    border-radius: 11rpx;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(176, 176, 176, 1) 0%, rgba(155, 155, 155, 1) 100%);
+}

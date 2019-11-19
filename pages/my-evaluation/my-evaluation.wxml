@@ -1,0 +1,22 @@
+<scroll-view scroll-y style="height:{{height + 'rpx'}}"
+    bindscrolltolower="getList"
+    enable-back-to-top = "{{true}}"
+>
+    <view style='height:20rpx'></view>
+    <view class='item' wx:for='{{list}}' wx:key="{{index}}" catchtap='open' data-id="{{item.id}}" data-name="{{item.name}}" data-status="{{item.status}}">
+        <view class='img'>
+            <image src='{{item.image}}' class='img'></image>
+        </view>
+        <view class='info'>
+            <view class='name'>{{item.name}}</view>
+            <view class='brief'>{{item.introduce}}</view>
+            <view class='user'>适用对象：{{item.tag}}</view>
+        </view>
+        <image wx:if="{{item.status == -1}}" class="status-icon" src="../../images/status_-1.png"></image>
+        <image wx:if="{{item.status == 0}}" class="status-icon" src="../../images/status_0.png"></image>
+        <image wx:if="{{item.status == 2}}" class="status-icon" src="../../images/status_2.png"></image>
+        <image wx:if="{{item.status == 4}}" class="status-icon" src="../../images/status_4.png"></image>
+        <image wx:if="{{item.status == 5}}" class="status-icon5" src="../../images/status_5.png"></image>
+    </view>
+    <i-load-more tip="{{tip}}" loading="{{ loading }}" />
+</scroll-view>

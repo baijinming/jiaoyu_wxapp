@@ -1,0 +1,59 @@
+<!--component/chat/before.wxml-->
+<view catchtouchmove="return">
+  <van-popup show="{{ popshow }}" bind:close="onClose" overlay="{{false}}" z-index="{{99999}}" position="bottom" style="width:{{popwidth}}px">
+    <view style='height:100vh;width:{{popwidth}}px' class='a-wrap'>
+      <van-icon name="close" custom-class="position-close" bind:click="close"/>
+      <view class='tabwrap'>
+        <view class='tab {{tabIdx==index?"active":""}}' bindtap='handleTab' data-idx='{{index}}' wx:for='{{tab}}' wx:key="{{index}}">{{item}}</view>
+      </view>
+
+      <view wx:if="{{tabIdx==0}}">
+        <scroll-view scroll-y style="height:{{scrollheight-410}}rpx;background:#fff" enable-back-to-top="{{true}}">
+          <block wx:for="{{textArr}}" wx:key="{{index}}">
+            <view class="item">
+              <view class='item-text'>{{item.text}}</view>
+              <view class='item-op-wrap'>
+                <view class='item-send' catchtap='innerpopsend' data-send="{{item.text}}" data-type="{{1}}">发送</view>
+                <view class='item-del' bindtap="deleteMsg" data-id="{{item.id}}">删除</view>
+              </view>
+            </view>
+            <view class='fenge' style='margin-top:0px;'></view>
+          </block>
+        </scroll-view>
+        <view class='bootom-save'>
+          <view class='bootom-area'>
+            <textarea maxlength="500" class='area-c' value='{{text}}' bindinput="changeArea"></textarea>
+          </view>
+          <view class='bottom-btn'>
+            <van-button type="default" size="small" style="margin-right: 50rpx;" catchtap='close'>取消</van-button>
+            <van-button type="info" size="small" style="margin-right: 50rpx;" catchtap='saveData'>保存</van-button>
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{tabIdx==1}}">
+        <scroll-view scroll-y style="height:{{scrollheight-100}}rpx;background:#fff" enable-back-to-top="{{true}}">
+          <block wx:for="{{img}}" wx:key="index">
+            <view class="item">
+              <view class='item-text'>
+                <image src='{{item.image}}' bindtap="priviewImg" data-image="{{item.image}}" mode="aspectFill" class='image-class'></image>
+              </view>
+              <view class='item-op-wrap'>
+                <view class='item-send' data-send="{{item.image}}" data-type="{{4}}" catchtap='innerpopsend'>发送</view>
+                <view class='item-del' bindtap="deleteMsg" data-id="{{item.id}}">删除</view>
+              </view>
+            </view>
+            <view class='fenge' style='margin-top:0px;'></view>
+          </block>
+        </scroll-view>
+        <view>
+          <view class='bottom-btn' style='padding:0rpx 40rpx;'>
+            <van-button type="default" size="small" style="margin-right: 50rpx;" catchtap='close'>取消</van-button>
+            <van-button type="info" size="small" style="margin-right: 50rpx;" catchtap='saveData' catchtap='chooseImg'>上传</van-button>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </van-popup>
+
+</view>

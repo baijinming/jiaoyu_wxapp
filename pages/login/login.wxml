@@ -1,0 +1,23 @@
+<view class="in-lo-top">
+  <image src="{{image_url + '/assets/img/app/1@3x.png'}}" class="in-logo-img"></image>
+  <image src="/images/4@3x.png" class="in-logo"></image>
+  <view class='title'>{{school}}客户端</view>
+</view>
+<view class='label'>账号</view>
+<view class='blank'>
+    <image class='icon' src='../../images/buy-name.png'></image>
+    <input placeholder-class='plc' placeholder='请输入您的账号' value='{{account}}'  bindinput="account"></input>
+</view>
+<view class='label'>密码</view>
+<view class='blank'>
+    <image class='icon' src='../../images/lock.png'></image>
+    <input placeholder-class='plc' placeholder='请输入您的密码' type='password' value='{{password}}' bindinput="password"></input>
+</view>
+<view class='reset' catchtap='detail'>《密码找回说明》</view>
+<view class='btn blue' bindtap='open'>立即登录</view>
+<view class='btn' bindtap='visitor'>访客登录</view>
+
+<view class="in-logo-wrap">
+  <image src="/images/4@3x.png" class="bottom-logo"></image>
+  <view>北京慧亦家教育科技有限公司</view>
+</view>

@@ -1,0 +1,49 @@
+<import src="./chat-send-status.wxml" />
+<import src="./voice.wxml" />
+<template name="chat-word">
+  <view style="width: 100%;display: flex;flex-direction: row;margin-bottom: {{index===length-1?150:20}}rpx;margin-top: 80rpx;position: relative;">
+    <view class="name">{{nickname}} <text>{{auth == 1 ? '主持人' : ''}}{{auth == 2 ? '主讲人' : ''}}</text> </view>
+    <view style="width: 70rpx;height: 70rpx;border-radius: 50%;overflow: hidden;margin-left: 15rpx;margin-right: 15rpx;transform: translateY(-20rpx)">
+      <image style="width: 70rpx;height: 70rpx;border-radius: 50%;" src="{{headUrl}}" />
+    </view>
+    <!-- <image wx:if="{{type===1||type===2}}" class="chat-list-arrow-style" src="/chat/image/chat/popu_{{isMy?'blue':'white'}}.png" /> -->
+    
+    <!-- 文字消息 -->
+    <block wx:if="{{type===1}}">
+      <view wx:if="{{type===1}}" class="isOtherWordStyle" style="border-radius: 10rpx;padding: 20rpx;font-size: 30rpx;max-width: 70%;" bindtap="chatTextItemClickEvent" data-index="{{index}}">{{content}}</view>
+    </block>
+    <!-- 文件消息 -->
+    <block wx:if="{{type===3}}">
+      <view wx:if="{{type===3}}" class="isOtherWordStyle" style="border-radius: 6rpx;background-color:#fff;padding: 20rpx;font-size: 30rpx;max-width: 60%;display:flex;" bindtap="fileClickEvent" data-url="{{content}}">
+        <view style="flex:1">
+          <view class="file-name">{{fileName}}</view>
+          <view class="file-size">{{fileSize}}</view>
+        </view>
+        <image class="file-icon" src="/images/file-icon.png"></image>
+      </view>
+    </block>
+    <!-- 图片消息 -->
+    <block wx:if="{{type===4}}">
+      <image wx:if="{{type===4}}" class="chat-list-pic-style" src="{{content}}" mode="aspectFill" bindtap="imageClickEvent" data-url="{{content}}" />
+    </block>
+    <!-- 语音消息 -->
+    <block wx:if="{{type===2}}">
+      <view style="width: {{(voiceDuration-1)*1+20}}%;border-radius: 10rpx;padding: 20rpx;font-size: 30rpx;max-width: 70%;display: flex;justify-content: flex-start;align-items: center" class="isOtherWordStyle" bindtap="chatVoiceItemClickEvent"
+        data-voice-path="{{content}}" data-voice-duration="{{voiceDuration}}" data-is-my="{{isMy}}" data-index="{{index}}">
+        <template is="voice-item" data="{{isMy:isMy,isPlaying:isPlaying}}" />
+        <view class="voice-duration-style">{{voiceDuration}}"</view>
+      </view>
+    </block>
+    <!-- 撤回 -->
+    <view wx:if="{{isMy}}" class="withdraw-box">
+      <view class="withdraw" bindtap="recallChatItems" data-index="{{index}}">
+        撤回
+      </view>
+    </view>
+
+    <block wx:if="{{isMy}}">
+      <template is="chat-send-status" data="{{sendStatus:sendStatus,index:index}}" />
+    </block>
+
+  </view>
+</template>

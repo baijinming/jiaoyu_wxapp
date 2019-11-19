@@ -1,0 +1,26 @@
+<!-- <view class='message' wx:for='{{[1,2,3]}}'>
+    <view class='left {{index==0?"dot":""}}'>
+        <image class='img' src='../../images/m-icon-{{index+1}}.png'></image>
+    </view>
+    <view class='right'>
+        <view class='content'>
+            课程小助手 恭喜你又一个课程可免费观看
+        </view>
+        <view class='type'>
+            系统消息
+        </view>
+        <view class='time'>37 分钟前</view>
+    </view>
+</view> -->
+<scroll-view scroll-y style="height:{{height + 'rpx'}}"
+    bindscrolltolower="getList"
+    enable-back-to-top = "{{true}}"
+>
+  <view class='all-wrap'>
+    <view class='msg-wrap' wx:for="{{list}}" wx:key="{{index}}">
+      <view class='content'>{{item.content}}</view>
+      <view class='bottom'>{{item.createtime}}</view>
+    </view>
+  </view>
+  <i-load-more tip="{{tip}}" loading="{{ loading }}" />
+</scroll-view>     

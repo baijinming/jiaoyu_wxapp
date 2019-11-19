@@ -1,0 +1,20 @@
+<view class="in-wrap">
+    <view class="in-wrap-top">
+      <image src="{{image_url + '/assets/img/app/10@3x.png'}}" class="top-img"></image>
+      <view class='school-title'>
+          慧亦家客户端
+      </view>
+    </view>
+    <view class="in-m-img">
+      <image src="{{image_url + '/assets/img/app/3@3x.png'}}" class="in-m-img1"></image>
+    </view>
+   
+    <view style='position:fixed;width:100%;bottom:350rpx;'>
+        <button class='btn blue' open-type="getUserInfo" bindgetuserinfo='bindGetUserInfo'>点击进行微信授权</button>
+    </view>
+    
+    <view class="in-logo-wrap">
+      <image src="/images/4@3x.png" class="in-logo"></image>
+      <view>北京慧亦家教育科技有限公司</view>
+    </view>
+</view>

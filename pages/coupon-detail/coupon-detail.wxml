@@ -1,0 +1,7 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="container">
+  <view class='texe'>
+      <template is="wxParse" data="{{wxParseData:introduce.nodes}}"/>
+  </view>
+</view>
+<view class="lq-btn" bindtap="receiveCoupon">立即领取</view>

@@ -1,0 +1,58 @@
+/* component/chat/listeners-input.wxss */
+.input-flex-column {
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  position:fixed;
+  left:0;
+  bottom:0;
+}
+
+.input-text-voice-super {
+  display:flex;
+  flex-direction:row;
+  background-color:#fff;
+  width:100%;
+  align-items:center;
+  height:100rpx;
+
+}
+.chat-input-style {
+  border:1rpx solid gainsboro;
+  margin-top:14rpx;
+  margin-bottom:13rpx;
+  padding:10rpx;
+  min-height:51rpx;
+  font-size: 29rpx;
+  background-color:#EFEFEF;
+
+}
+.press-style-opacity {
+  opacity:0.5;
+
+}
+.chat-input-send-button-style {
+  width:100rpx;
+  padding:15rpx 0;
+  font-size:30rpx;
+  text-align:center;
+  margin:0 10rpx;
+  border-radius:10rpx;
+
+}
+.holder {
+  font-size:29rpx;
+  font-family:PingFangSC;
+  font-weight:400;
+  color:rgba(35,35,36,1);
+}
+.extra-super {
+  background: #fff;
+  font-size:31rpx;
+  font-family:PingFangSC;
+  font-weight:400;
+  color:rgba(48,48,48,1);
+  line-height:43rpx;
+}
+
+

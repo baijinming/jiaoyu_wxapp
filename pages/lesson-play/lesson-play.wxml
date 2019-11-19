@@ -1,0 +1,13 @@
+<video class='video' autoplay="true" src='{{info.file}}'></video>
+<view class='wrap'>
+    <view class='title'>{{info.name}}</view>
+    <view class='detail van-multi-ellipsis--l3'>{{info.introduce}}</view>
+    <view class='tips'>听完本章节可获得{{info.score}}积分</view>
+</view>
+<view class="chapter-title">章节列表</view>
+<scroll-view class="chapter" scroll-x="true">
+  <view class="chapter-item {{id == item.id ? 'chapter-cheked' : ''}}" wx:for="{{chapter}}" bindtap="switch" data-id="{{item.id}}" data-is_audition="{{item.is_audition}}">
+    <view class="text-name">{{item.name}}</view>
+    <image wx:if="{{item.is_audition == 2 && is_buy == 0}}" class="audition" src="../../images/audition.png"></image>
+  </view>
+</scroll-view>

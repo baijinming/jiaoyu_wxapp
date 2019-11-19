@@ -1,0 +1,155 @@
+.title {
+  padding-top: 110rpx;
+  margin-bottom: 18rpx;
+  text-align: center;
+  line-height: 51rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #303030;
+}
+
+.de-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rpx;
+}
+
+.teacher {
+  line-height: 40rpx;
+  font-size: 29rpx;
+  transform: translateZ(180deg)
+}
+
+.date {
+  margin-left: 30rpx;
+  line-height: 40rpx;
+  font-size: 29rpx;
+}
+
+.amount {
+  margin: 18rpx 0 80rpx;
+  line-height: 31rpx;
+  font-size: 22rpx;
+  text-align: center;
+  color: #bf9154;
+}
+
+.banner {
+  width: 616rpx;
+  height: 362rpx;
+  margin: 0 auto;
+  border-radius: 11rpx;
+  background: #fbfbfb;
+}
+
+.blank {
+  display: flex;
+  align-items: center;
+  margin: 100rpx auto 29rpx;
+  padding-left: 34rpx;
+  padding-right: 25rpx;
+  width: 679rpx;
+  height: 92rpx;
+  border-radius: 7rpx;
+  background: rgba(248, 244, 238, 1);
+}
+
+.left {
+  flex: 1;
+  font-size: 25rpx;
+  color: #bf9154;
+}
+
+.right {
+  width: 149rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  text-align: center;
+  border-radius: 9rpx;
+  font-size: 25rpx;
+  color: #7f5d2d;
+  background: linear-gradient(134deg, rgba(232, 203, 161, 1) 0%, rgba(200, 152, 87, 1) 100%);
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 36rpx;
+}
+
+
+.text {
+  line-height: 29rpx;
+  font-size: 20rpx;
+  font-weight: 700;
+  color: #9c9c9c;
+}
+
+.audio-progress {
+  width: 520rpx;
+  height: 4rpx;
+  border-radius: 2rpx;
+  background: rgba(208, 208, 208, 0.5);
+  position: relative;
+}
+
+.circular-icon {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background-color: #3c89ff;
+  position: absolute;
+  top: -12rpx;
+}
+
+.line {
+  position: relative;
+  width: 520rpx;
+  height: 4rpx;
+  border-radius: 2rpx;
+  background: rgba(208, 208, 208, 0.5);
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  width: 83rpx;
+  height: 4rpx;
+  border-radius: 2rpx;
+  background: #3c89ff;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  left: 65rpx;
+  top: -5rpx;
+  width: 36rpx;
+  height: 14rpx;
+  border-radius: 7rpx;
+  background: rgba(60, 137, 255, 1);
+}
+
+.btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 70rpx;
+  margin-top: 80rpx;
+}
+
+.btn-wrap .s {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.btn-wrap .m {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.btn-wrap .b {
+  width: 70rpx;
+  height: 70rpx;
+}

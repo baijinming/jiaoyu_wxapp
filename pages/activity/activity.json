@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "i-load-more": "/component/load-more/index"
+  },
+ "enablePullDownRefresh": false,
+  "navigationBarTitleText":"实践活动"
+}

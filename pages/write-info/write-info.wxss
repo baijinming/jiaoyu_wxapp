@@ -1,0 +1,87 @@
+.title {
+    padding: 94rpx 0;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 43rpx;
+    font-weight: 700;
+    color: #303030;
+}
+
+.blank {
+    display: flex;
+    align-items: center;
+    height: 105rpx;
+    padding-left: 54rpx;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.label image {
+    width: 65rpx;
+    height: 65rpx;
+}
+
+input {
+    flex: 1;
+    padding-left: 24rpx;
+}
+
+.plc {
+    font-size: 31rpx;
+    color: #dbdbdb;
+}
+
+.code {
+    width: 176rpx;
+    height: 54rpx;
+    line-height: 54rpx;
+    text-align: center;
+    border-radius: 13rpx;
+    border: 2rpx solid rgba(60, 137, 255, 1);
+    margin-right: 38rpx;
+    font-size: 25rpx;
+    color: #3c89ff;
+}
+
+.btn {
+    width: 391rpx;
+    height: 91rpx;
+    margin: 400rpx auto 0;
+    line-height: 91rpx;
+    font-size: 31rpx;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 11rpx;
+    color: #fff;
+    background: linear-gradient(135deg,rgba(176,176,176,1) 0%,rgba(155,155,155,1) 100%);
+}
+.btn1 {
+    width: 391rpx;
+    height: 91rpx;
+    margin: 400rpx auto 0;
+    line-height: 91rpx;
+    font-size: 31rpx;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 11rpx;
+    color: #fff;
+    background: linear-gradient(135deg,rgba(111,190,255,1) 0%,rgba(60,137,255,1) 100%);
+}
+.tip {
+    margin-top: 40rpx;
+    text-align: center;
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #dbdbdb;
+}
+
+.tip span {
+    color: #3c89ff;
+}
+.list{
+  margin-left: 130rpx;
+}
+.list .item{
+  height: 109rpx;
+  line-height: 109rpx;
+  border-bottom: 1rpx solid #DBDBDB;
+}

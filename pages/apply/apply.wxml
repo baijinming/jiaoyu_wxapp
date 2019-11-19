@@ -1,0 +1,36 @@
+<view class="in-wrap-top">
+  <image src="{{image_url + '/assets/img/app/10@3x.png'}}" class="top-img"></image>
+  <!-- <view class='school-title'>
+      慧亦家客户端
+  </view> -->
+</view>
+<!-- <view class="in-m-img">
+  <image src="{{image_url + '/assets/img/app/2@3x.png'}}" class="in-m-img1"></image>
+</view> -->
+<image class="login-logo" src="../../images/login_logo.png"></image>
+<view class='blank'>
+    <view class='label'>学校名称</view>
+    <input placeholder-class='plc' placeholder='请在次处输入您的学校名称'  bindinput="changenName" value='{{name}}'></input>
+</view>
+<view class='blank'>
+    <view class='label'>姓名</view>
+    <input placeholder-class='plc' placeholder='请在此处输入您的真实姓名' value='{{real_name}}'      bindinput="changeRealName"></input>
+</view>
+<view class='blank'>
+    <view class='label'>手机号</view>
+    <input maxlength='11' type='number'  placeholder-class='plc' placeholder='请在此处输入您的手机号' bindinput="changeMobile"></input>
+</view>
+<view class='blank'>
+    <view class='label'>验证码</view>
+    <input placeholder-class='plc' bindinput="changeCaptcha"  type='number' maxlength='6' placeholder='请输入您的验证码'></input>
+    <view class='code' catchtap='send' wx:if="{{!is_show}}">获取验证码</view>
+    <view class='code'  wx:if="{{is_show}}">{{second}}秒</view>
+</view>
+<view class='btn' bindtap='submit'>提交信息</view>
+<view class='tip'>提交及代表您阅读并同意
+    <span catchtap="open">《入驻须知》</span>
+</view>
+<view class="in-logo-wrap">
+  <image src="/images/4@3x.png" class="in-logo"></image>
+  <view>北京慧亦家教育科技有限公司</view>
+</view>

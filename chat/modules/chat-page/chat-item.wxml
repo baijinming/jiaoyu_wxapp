@@ -1,0 +1,13 @@
+<import src="./word.wxml"/>
+<template name="chat-item">
+    <view style="width: 100%;display: flex;flex-direction: column;align-items: center">
+        <block wx:if="{{item.type!=='custom'}}">
+            <text wx:if="{{item.showTime}}" class="chat-list-time-style">{{item.time}}</text>
+            <template is="chat-word"
+                      data="{{length:length,index:index,headUrl:item.headUrl,isMy:item.isMy,showTime:item.showTime,time:item.time,content:item.content,type:item.type,voiceDuration:item.voiceDuration,isPlaying:item.isPlaying,sendStatus:item.sendStatus,fileName: item.fileName,fileSize: item.fileSize,nickname: item.nickname,auth: item.auth}}"/>
+        </block>
+        <block wx:else>
+          <text class="chat-list-time-style">{{item.content}}</text>
+        </block>
+    </view>
+</template>

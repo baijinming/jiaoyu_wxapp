@@ -1,0 +1,17 @@
+<!--component/chat/title.wxml-->
+<view class='title'>
+  <view class="header-box">
+    <view class="avatar">
+      <image src="{{chatinfo.talk_info.avatar}}"></image>
+    </view>
+    <view class='title-c'>
+      <view class='title-h'>{{chatinfo.name}}</view>
+      <view>直播中 | {{hours + ':' + min + ':' + seconds}}</view>
+    </view>
+  </view>
+  <swiper wx:if="{{bannerList[0]}}" class='swiper' interval='5000' circular autoplay>
+      <swiper-item class='swiper-item' wx:for='{{bannerList}}' wx:key="{{index}}">
+          <image src='{{item}}' class='img' bindtap="preview" data-item="{{item}}"> </image>
+      </swiper-item>
+  </swiper>
+</view>

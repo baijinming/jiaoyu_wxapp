@@ -1,0 +1,22 @@
+<view>
+  <scroll-view scroll-y style="height:{{height + 'rpx'}}" bindscrolltolower="getList" enable-back-to-top="{{true}}">
+    <view style='height:34rpx;'></view>
+    <view class='item' wx:for='{{list}}' wx:key="{{index}}">
+      <image class='img' src='{{item.image}}'>
+        <view class='name van-ellipsis'>{{item.introduce}}</view>
+      </image>
+      <view class='blank'>
+        <view class='info'>
+          <block>
+            <view class='teacher'>咨询师：{{item.teacher_name}}</view>
+            <view class='time'>开始时间：{{item.start_time}}</view>
+          </block>
+        </view>
+        <view wx:if="{{item.type == 0}}" class='btn'>待审核</view>
+        <view wx:if="{{item.type == 2}}" class='btn'>审核驳回</view>
+        <view wx:if="{{item.type == 1}}" bindtap="intoConsult" data-index="{{index}}" class='btn active'>进入咨询室</view>
+      </view>
+    </view>
+    <i-load-more tip="{{tip}}" loading="{{ loading }}" />
+  </scroll-view>
+</view>

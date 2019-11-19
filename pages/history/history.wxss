@@ -1,0 +1,74 @@
+page {
+    background-color: #fafafa;
+}
+
+.wrap {
+    background-color: #fff;
+}
+
+.lesson {
+    display: flex;
+    align-items: center;
+    margin-left: 30rpx;
+    padding: 27rpx 27rpx 27rpx 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.lesson:last-child {
+    border-bottom: none;
+}
+
+.img {
+    width: 203rpx;
+    height: 185rpx;
+    border-radius: 11px;
+    background: #fbfbfb;
+}
+
+.info {
+    flex: 1;
+    margin-left: 27rpx;
+}
+
+.name {
+    width: 300rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 38rpx;
+    font-size: 27rpx;
+    font-weight: 700;
+}
+
+.brief {
+    margin-top: 18rpx;
+    line-height: 36rpx;
+    font-size: 25rpx;
+    color: #999;
+}
+
+.blank {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 18rpx;
+}
+
+.lesson .amount {
+    line-height: 36rpx;
+    font-size: 25rpx;
+    color: #dbdbdb;
+}
+
+.sales {
+    flex: 1;
+    line-height: 25rpx;
+    font-size: 18rpx;
+    color: #999;
+}
+
+.like {
+    width: 30rpx;
+    height: 30rpx;
+    margin-left: 18rpx;
+}

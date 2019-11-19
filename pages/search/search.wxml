@@ -1,0 +1,15 @@
+<view class='wrap'>
+    <van-search value="{{ value }}" placeholder="请输入课程名称" bind:search='search' />
+
+    <view class='type'>历史纪录</view>
+    <view class='tag-wrap'>
+        <view class='tag' wx:for='{{history}}' wx:key="{{index}}" data-kwd="{{item.name}}" catchtap='jump'>{{item.name}}</view>
+    </view>
+    <view class='type'>热门搜索</view>
+    <view class='tag-wrap'>
+        <view class='hot' wx:for='{{hot}}' wx:key="{{index}}" data-kwd="{{item.name}}" catchtap='jump'>
+            <image class='icon' src='../../images/hot.png'></image>
+            <view class='text'>{{item.name}}</view>
+        </view>
+    </view>
+</view>

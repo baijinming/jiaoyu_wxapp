@@ -1,0 +1,332 @@
+.banner {
+    padding-bottom: 36rpx;
+    border-bottom: 18rpx solid #fafafa;
+}
+
+.swiper {
+    height: 308rpx;
+}
+
+.swiper-item {
+    box-sizing: border-box;
+    padding: 0 34rpx;
+}
+
+.swiper-item .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20rpx;
+    background-color: #fbfbfb;
+}
+
+.tab-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80rpx;
+    box-shadow: 0 4rpx 7rpx 0 rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+}
+
+.tab {
+    position: relative;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 25rpx;
+    color: #303030;
+}
+
+.tab-wrap .active {
+    color: #3c89ff;
+}
+
+.tab-wrap .active::after {
+    position: absolute;
+    content: '';
+    bottom: 4rpx;
+    left: 50%;
+    width: 100%;
+    height: 4rpx;
+    transform: translate3d(-50%, 0, 0);
+    background-color: #3c89ff;
+}
+
+.item {
+    display: flex;
+    padding-left: 25rpx;
+    padding-right: 22rpx;
+}
+
+.left {
+    padding-top: 13rpx;
+}
+
+.date {
+    text-align: right;
+    line-height: 25rpx;
+    font-size: 18rpx;
+    color: #999;
+}
+
+.time {
+    text-align: right;
+    line-height: 40rpx;
+    font-size: 29rpx;
+    font-weight: 700;
+    color: #666;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20rpx 0 14rpx;
+}
+
+.dot {
+    width: 18rpx;
+    height: 18rpx;
+    border-radius: 50%;
+    background-color: rgba(246, 246, 246, 1);
+}
+
+.line1 {
+    height: 30rpx;
+    width: 1px;
+    background-color: #f6f6f6;
+}
+
+.line2 {
+    flex: 1;
+    width: 1px;
+    background-color: #f6f6f6;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.right {
+    position: relative;
+    width: 570rpx;
+    border-radius: 20rpx;
+    padding: 22rpx 40rpx 16rpx;
+    margin-bottom: 22rpx;
+    background-color: #fafafa;
+}
+
+.right::before {
+    content: '';
+    position: absolute;
+    left: -10rpx;
+    top: 30rpx;
+    border-right: 12rpx solid #fafafa;
+    border-top: 10rpx solid transparent;
+    border-bottom: 10rpx solid transparent;
+}
+
+.name {
+    line-height: 38rpx;
+    font-size: 27rpx;
+    font-weight: 700;
+    color: #303030;
+}
+
+.blank {
+    display: flex;
+    align-items: center;
+    margin-top: 13rpx;
+}
+
+.avatar {
+    width: 36rpx;
+    height: 36rpx;
+    border-radius: 50%;
+    background-color: #fbfbfb;
+}
+
+.teacher {
+    margin-left: 13rpx;
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #999;
+}
+
+.end {
+    position: absolute;
+    right: 34rpx;
+    bottom: 18rpx;
+    z-index: 996;
+    width: 132rpx;
+    height: 54rpx;
+    line-height: 54rpx;
+    text-align: center;
+    border-radius: 9rpx;
+    font-size: 22rpx;
+    color: #fff;
+    background: rgba(60, 137, 255, 1);
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.titlewrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 43rpx 0 34rpx;
+}
+
+.titlewrap .title {
+    flex: 1;
+    line-height: 47rpx;
+    font-size: 34rpx;
+    font-weight: 700;
+    color: #303030;
+}
+
+.titlewrap .title2 {
+    flex: 1;
+    position: relative;
+    line-height: 40rpx;
+    font-size: 29rpx;
+    font-weight: 700;
+    color: #303030;
+}
+
+.titlewrap .title2:before {
+    content: '';
+    position: absolute;
+    left: -11rpx;
+    top: 50%;
+    width: 9rpx;
+    height: 31rpx;
+    margin-top: -15rpx;
+    background: rgba(60, 137, 255, 1);
+}
+
+.titlewrap .more {
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #999;
+}
+
+.titlewrap .icon {
+    width: 27rpx;
+    height: 27rpx;
+}
+
+.lesson {
+    display: flex;
+    align-items: center;
+    margin-left: 30rpx;
+    padding: 27rpx 27rpx 27rpx 0;
+    border-bottom: 1px solid #fafafa;
+}
+
+.lesson:last-child {
+    border-bottom: none;
+}
+
+.lesson .img {
+    width: 200rpx;
+    height: 160rpx;
+    border-radius: 10rpx;
+    background: #fbfbfb;
+}
+
+.lesson .info {
+    flex: 1;
+    margin-left: 27rpx;
+}
+
+.lesson .name {
+    width: 300rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 38rpx;
+    font-size: 30rpx;
+    font-weight: 700;
+}
+
+.lesson .brief {
+    margin-top: 18rpx;
+    line-height: 36rpx;
+    font-size: 25rpx;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.lesson .blank {
+    display: flex;
+    align-items: center;
+    margin-top: 18rpx;
+}
+
+.lesson .price {
+    line-height: 31rpx;
+    font-size: 31rpx;
+    font-weight: 700;
+    color: #e13434;
+}
+
+.lesson .price span {
+    font-size: 22rpx;
+}
+
+.lesson .free {
+    width: 47rpx;
+    height: 27rpx;
+    line-height: 27rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 18rpx;
+    border-radius: 13rpx 0 13rpx 0;
+    background: linear-gradient(180deg, rgba(245, 81, 95, 1) 0%, rgba(221, 0, 33, 1) 100%);
+}
+
+.lesson .cost {
+    margin-left: 7rpx;
+    line-height: 31rpx;
+    font-size: 22rpx;
+    text-decoration: line-through;
+    color: #979797;
+}
+
+.lesson .time {
+    flex: 1;
+    margin-left: 30rpx;
+    line-height: 31rpx;
+    font-size: 22rpx;
+    text-align: left;
+    color: #979797;
+}
+
+.lesson .amount {
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #979797;
+}
+
+.lesson .like {
+    width: 25rpx;
+    height: 25rpx;
+    margin-left: 18rpx;
+}
+
+.no-live {
+  font-size: 28rpx;
+  color: #303030;
+  margin: 50rpx 0 0;
+  text-align: center;
+}

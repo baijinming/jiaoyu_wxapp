@@ -1,0 +1,72 @@
+page {
+  background-color: #fafafa;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 208rpx;
+  margin-bottom: 18rpx;
+  padding-left: 30rpx;
+  border-radius: 20rpx;
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+}
+
+.status-icon {
+  width: 80rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+
+.status-icon5 {
+  width: 178rpx;
+  height: 26rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+
+.img {
+  width: 200rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  background-color: #fbfbfb;
+}
+
+.info {
+  flex: 1;
+  margin-left: 22rpx;
+}
+
+.name {
+  padding-top: 7rpx;
+  line-height: 38rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #303030;
+  width: 460rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.brief {
+  margin: 18rpx 0;
+  line-height: 33rpx;
+  font-size: 24rpx;
+  color: #999;
+  width: 460rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user {
+  line-height: 33rpx;
+  font-size: 24rpx;
+  color: #303030;
+}

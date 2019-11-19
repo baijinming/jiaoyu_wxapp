@@ -1,0 +1,78 @@
+page {
+  background-color: #fafafa;
+}
+
+.wrap {
+  background-color: #fff;
+}
+
+.lesson {
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+  padding: 27rpx 27rpx 27rpx 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.lesson:last-child {
+  border-bottom: none;
+}
+
+.img {
+  width: 200rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  background: #fbfbfb;
+}
+
+.info {
+  flex: 1;
+  margin-left: 27rpx;
+}
+
+.name {
+  width: 450rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 38rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.brief {
+  width: 450rpx;
+  margin-top: 18rpx;
+  line-height: 36rpx;
+  font-size: 27rpx;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blank {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 18rpx;
+}
+
+.lesson .amount {
+  line-height: 36rpx;
+  font-size: 25rpx;
+  color: #dbdbdb;
+}
+
+.sales {
+  flex: 1;
+  line-height: 25rpx;
+  font-size: 18rpx;
+  color: #999;
+}
+
+.like {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 18rpx;
+}

@@ -1,0 +1,38 @@
+<view class="in-wrap">
+    <view class="in-wrap-top">
+      <image src="{{image_url + '/assets/img/app/10@3x.png'}}" class="top-img"></image>
+      <!-- <view class='school-title'>
+          慧亦家客户端
+      </view> -->
+    </view>
+    <!-- <view class="in-m-img">
+      <image src="{{image_url + '/assets/img/app/3@3x.png'}}" class="in-m-img1"></image>
+    </view> -->
+    <image class="login-logo" src="../../images/login_logo.png"></image>
+    <view class='school-mid'>
+        <van-search value="{{ value }}" placeholder="请在此输入你想要搜索的学校" bind:change ="search"/>
+        <text decode="{{true}}" class='need-read' style="left:70rpx;" catchtap='open'>《用户须知》</text>
+        <text decode="{{true}}" class='need-read' style="right:70rpx;" catchtap='submit'>提交入驻申请 > </text>
+        <view class='search-res' wx:if="{{showSearch}}" >
+            <scroll-view scroll-y="true" style="height:200px;" >
+               <button wx:for="{{list}}"  open-type="getUserInfo" bindgetuserinfo='bindGetUserInfo' data-org_cate_id = "{{item.id}}" class='list' wx:key="{{index}}" data-name="{{item.name}}"> {{item.name}}</button> 
+            </scroll-view>
+        </view>
+    </view>
+    <!-- <view style='margin-top:160rpx;' wx:if="{{org_cate_id == 0}}">
+        <button class='btn blue' catchtap="tologin" style="background:#A6A6A6">请选择学校后登陆</button>
+    </view> -->
+    <!-- <view style='margin-top:160rpx;' wx:else>
+        <button class='btn blue' catchtap="tologin">立即登陆</button>
+    </view> -->
+    <!-- <view class='bottom'>
+        <view catchtap='submit'>
+            <text>提交入住申请</text>
+            <image src='/images/front.png' class='bottom-image' mode='scaleToFill'></image>
+        </view>
+    </view> -->
+    <view class="in-logo-wrap">
+      <image src="/images/4@3x.png" class="in-logo"></image>
+      <view>北京慧亦家教育科技有限公司</view>
+    </view>
+</view>

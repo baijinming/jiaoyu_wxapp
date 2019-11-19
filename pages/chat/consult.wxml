@@ -1,0 +1,19 @@
+<!--pages/list/list.wxml-->
+<import src="/chat/modules/chat-page/chat-item.wxml" />
+<import src="/chat/modules/chat-input/chat-input.wxml" />
+<import src="/chat/modules/chat-page/chat-page-status.wxml" />
+<view class="indexPage chat-container {{popshow?'indexFixed':''}}">
+  <!-- <chat-title chatinfo = "{{titleinfo}}"></chat-title> -->
+  <!-- <chat-popup popshow="{{popshow}}" bind:popsend="popSend" bind:closepop="closepop"> </chat-popup> -->
+  <scroll-view style="flex: 1;width: 100%;display: flex;flex-direction: column;margin-bottom: 40rpx;" scroll-y="true" scroll-top="{{scrollTopVal}}" bindtap="resetInputStatus" bindscrolltoupper="getMoreHistory">
+    <image wx:if="{{getHistoryNow}}" class="loading-icon" src="../../images/loading.gif"></image>
+    <block wx:for="{{chatItems}}" wx:key="{{index}}">
+      <template is="chat-item" data="{{length:chatItems.length,index:index,item:item,consult:true}}" />
+    </block>
+    <!-- <view class="wrap-scroll">
+        <chat-scrollmessage auth='{{auth}}' listeners="{{listeners}}"></chat-scrollmessage>
+      </view> -->
+  </scroll-view>
+  <template is="chat-input" data="{{inputObj,textMessage,showVoicePart:true}}" wx:if="{{auth != 3}}" />
+  <chat-listeners bind:listenersend="listenersend" bind:ifshowtextclick="ifshowtextclick" ifshowtext="{{ifshowtext}}" wx:else> </chat-listeners>
+</view>

@@ -1,0 +1,187 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 72rpx 45rpx 0;
+  /* height: 280rpx; */
+  border-bottom: 18rpx solid #fafafa;
+  background-color: #fff;
+}
+
+.head .info {
+  flex: 1;
+}
+
+.name {
+  line-height: 43rpx;
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #303030;
+}
+
+.head .brief {
+  margin-top: 7rpx;
+  margin-bottom: 9rpx;
+  line-height: 36rpx;
+  font-size: 25rpx;
+  color: #303030;
+}
+
+.head .blank {
+  display: flex;
+  margin-bottom: 18rpx;
+}
+
+.head .icon {
+  margin-top: 4rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.text {
+  flex: 1;
+  line-height: 36rpx;
+  font-size: 25rpx;
+}
+
+.avatar {
+  width: 150rpx;
+  height: 150rpx;
+  background-color: #fbfbfb;
+  margin-right: 10rpx;
+  border-radius: 10rpx;
+}
+
+/* ---------------head END------------------- */
+
+.title {
+  position: relative;
+  padding: 25rpx 34rpx;
+  line-height: 43rpx;
+  font-size: 31rpx;
+  font-weight: 700;
+  color: #303030;
+}
+
+.title::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 34rpx;
+  width: 11rpx;
+  height: 27rpx;
+  background: rgba(60, 137, 255, 1);
+}
+
+.banner {
+  width: 699rpx;
+  height: 293rpx;
+  margin: 9rpx auto 0;
+  border-radius: 18rpx;
+  background: rgba(187, 229, 248, 1);
+  display: block;
+}
+
+.tit-wrap {
+  display: flex;
+  align-items: center;
+  padding: 0 25rpx;
+  margin-top: 18rpx;
+}
+
+.tit {
+  flex: 1;
+  line-height: 38rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #303030;
+}
+
+.like {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.likenum {
+  line-height: 36rpx;
+  font-size: 28rpx;
+  color: #dbdbdb;
+}
+
+.num-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 11rpx;
+  padding: 0 25rpx;
+}
+
+.price {
+  line-height: 43rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #f42900;
+}
+
+.length {
+  margin-left: 9rpx;
+  line-height: 25rpx;
+  font-size: 20rpx;
+  color: #999;
+}
+
+.sales {
+  margin-left: 47rpx;
+  line-height: 25rpx;
+  font-size: 20rpx;
+  color: #999;
+}
+
+.lesson {
+  display: flex;
+  margin-left: 30rpx;
+  padding: 27rpx 20rpx 27rpx 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.lesson:last-child {
+  border-bottom: none;
+}
+
+.img {
+  width: 200rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  background-color: #fbfbfb;
+}
+
+.linfo {
+  flex: 1;
+  margin-left: 27rpx;
+}
+
+.lname {
+  width: 450rpx;
+  padding-top: 14rpx;
+  line-height: 38rpx;
+  font-size: 27rpx;
+  font-weight: 700;
+  color: #303030;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lbrief {
+  margin: 18rpx 0;
+  line-height: 36rpx;
+  font-size: 25rpx;
+  color: #999;
+}
+
+.lblank {
+  display: flex;
+  align-items: center;
+}
+
+.lesson .length {
+  flex: 1;
+}

@@ -1,0 +1,606 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.0",
+	"appid": "wxeb14f37ece43425f",
+	"projectname": "wxapp_edu",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 76,
+			"list": [
+				{
+					"id": -1,
+					"name": "message",
+					"pathName": "pages/message/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "coupon",
+					"pathName": "pages/coupon/coupon",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "consult",
+					"pathName": "pages/consult/consult",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "evaluation",
+					"pathName": "pages/evaluation/evaluation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "live",
+					"pathName": "pages/live/live",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "point",
+					"pathName": "pages/point/point",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "setting",
+					"pathName": "pages/setting/setting",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "my-lesson",
+					"pathName": "pages/my-lesson/my-lesson",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "my-evaluation",
+					"pathName": "pages/my-evaluation/my-evaluation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "my-consult",
+					"pathName": "pages/my-consult/my-consult",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "my-question",
+					"pathName": "pages/my-question/my-question",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "question",
+					"pathName": "pages/question/question",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "question-detail",
+					"pathName": "pages/question-detail/question-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activity",
+					"pathName": "pages/activity/activity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "evaluation-detail",
+					"pathName": "pages/evaluation-detail/evaluation-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "buy1",
+					"pathName": "pages/buy1/buy1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "buy2",
+					"pathName": "pages/buy2/buy2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "lesson-h",
+					"pathName": "pages/lesson-h/lesson-h",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "lesson-v",
+					"pathName": "pages/lesson-v/lesson-v",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "lesson-detail",
+					"pathName": "pages/lesson-detail/lesson-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "consult-detail",
+					"pathName": "pages/consult-detail/consult-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "teacher",
+					"pathName": "pages/teacher/teacher",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "series",
+					"pathName": "pages/series/series",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "series-play",
+					"pathName": "pages/series-play/series-play",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "advance",
+					"pathName": "pages/advance/advance",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登陆",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的积分",
+					"pathName": "pages/point/point",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "优惠卷",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "专题",
+					"pathName": "pages/lesson-v/lesson-v",
+					"query": "/pages/lesson-v/lesson-v?type=specials",
+					"scene": null
+				},
+				{
+					"id": 32,
+					"name": "大咖老师",
+					"pathName": "/pages/lesson-v/lesson-v",
+					"query": "type=teacher",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "大咖老师",
+					"pathName": "pages/index/index",
+					"query": "type=teacher",
+					"scene": null
+				},
+				{
+					"id": 34,
+					"name": "老师详情",
+					"pathName": "pages/teacher/teacher",
+					"query": "teacher_id=2",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "老师详情",
+					"pathName": "pages/question/question",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "老师详情",
+					"pathName": "pages/activity/activity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "fa",
+					"pathName": "pages/coupon/coupon",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ffff",
+					"pathName": "pages/my-consult/my-consult",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ffff1111",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1112直播室",
+					"pathName": "pages/live/live",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1111111",
+					"pathName": "pages/before-room/before-room",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "112恶法无法",
+					"pathName": "pages/live/live",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "12313",
+					"pathName": "pages/lesson-detail/lesson-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "dawfawfe",
+					"pathName": "pages/setting/setting",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "入住申请",
+					"pathName": "pages/apply/apply",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "入住申请",
+					"pathName": "pages/apply/apply",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/chat/chat",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chat-room/chat",
+					"pathName": "pages/chat-room/chat",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chat-room/chat",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chat-room/chat",
+					"pathName": "pages/chat-room/chat",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "fafaf",
+					"pathName": "pages/suggession/suggession",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "系统信息",
+					"pathName": "pages/message/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "系统信息",
+					"pathName": "pages/choose-school/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测评",
+					"pathName": "pages/evaluation/evaluation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测评",
+					"pathName": "pages/buy1/buy1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/choose-school/index2",
+					"pathName": "pages/choose-school/index2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/advance/advance",
+					"pathName": "pages/advance/advance",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/advance/advance",
+					"pathName": "pages/advance/advance",
+					"query": "id=4&start_time=1571030865",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "id=4&start_time=1571030865",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/live/live",
+					"pathName": "pages/live/live",
+					"query": "id=4&start_time=1571030865",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/live/live",
+					"pathName": "pages/live/live",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/advance/advance",
+					"pathName": "pages/advance/advance",
+					"query": "id=4&start_time=1571030865",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lesson-detail/lesson-detail",
+					"pathName": "pages/lesson-detail/lesson-detail",
+					"query": "course_id=6",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/advance/advance",
+					"pathName": "pages/advance/advance",
+					"query": "id=4&start_time=1571030865",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lesson-detail/lesson-detail",
+					"pathName": "pages/lesson-detail/lesson-detail",
+					"query": "course_id=11",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/question/question",
+					"pathName": "pages/question/question",
+					"query": "course_id=11",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/question/question",
+					"pathName": "pages/question/question",
+					"query": "title=%E5%AE%B6%E9%95%BF%E9%97%AE%E7%AD%94",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/series-play/series-play",
+					"pathName": "pages/series-play/series-play",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/series-play/series-play",
+					"pathName": "pages/series-play/series-play",
+					"query": "id=6",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/series-play/series-play",
+					"pathName": "pages/series-play/series-play",
+					"query": "chapter_id =6",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/series-play/series-play",
+					"pathName": "pages/series-play/series-play",
+					"query": "chapter_id=15&course_id=3",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chat/chat",
+					"pathName": "pages/chat/chat",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lesson-detail/lesson-detail",
+					"pathName": "pages/lesson-detail/lesson-detail",
+					"query": "course_id=12",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lesson-detail/lesson-detail",
+					"pathName": "pages/lesson-detail/lesson-detail",
+					"query": "course_id=11",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/coupon/coupon",
+					"pathName": "pages/coupon/coupon",
+					"query": "course_id=11",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/bind-account/bind-account",
+					"pathName": "pages/bind-account/bind-account",
+					"scene": null
+				}
+			]
+		}
+	}
+}

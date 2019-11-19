@@ -1,0 +1,11 @@
+<view class="input-item">
+  <view class="text">账号名称：</view>
+  <input class="input" placeholder="请输入账号" bindinput="getAccount"></input>
+</view>
+<view class="input-item">
+  <view class="text">账号密码：</view>
+  <input class="input" type="password" placeholder="请输入账号" bindinput="getPassword"></input>
+</view>
+
+<view class="btn {{bindOk ? 'bindOk' : ''}}" bindtap="bindAccount">立即绑定</view>
+<view class="btn" style="display:none">该账号已绑定</view>

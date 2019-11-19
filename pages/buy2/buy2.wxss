@@ -1,0 +1,169 @@
+page {
+    background-color: #f7f7f7;
+}
+
+.buyer {
+    display: flex;
+    align-items: center;
+    height: 136rpx;
+    padding: 0 33rpx;
+    border-bottom: 18rpx solid #f7f7f7;
+    background-color: #fff;
+}
+
+.buyer .left {
+    flex: 1;
+}
+
+.name {
+    line-height: 43rpx;
+    font-size: 30rpx;
+    color: #303030;
+}
+
+.id {
+    line-height: 36rpx;
+    font-size: 25rpx;
+    color: #999;
+}
+
+.buyer .more {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.goods {
+    display: flex;
+    align-items: center;
+    padding: 31rpx 27rpx 0;
+    background-color: #fff;
+}
+
+.img {
+    width: 228rpx;
+    height: 134rpx;
+    margin-right: 16rpx;
+    background-color: #fbfbfb;
+}
+
+.name {
+    flex: 1;
+    width: 236rpx;
+    line-height: 38rpx;
+    font-size: 27rpx;
+    color: #999;
+}
+
+.num {
+    line-height: 30rpx;
+    font-size: 22rpx;
+    color: #303030;
+}
+
+.goods .more {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.blank {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 74rpx;
+    padding: 0 27rpx;
+    background-color: #fff;
+}
+
+.label {
+    line-height: 30rpx;
+    font-size: 22rpx;
+    color: #303030;
+}
+
+.blank .more {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.blank .total {
+    line-height: 38rpx;
+    font-size: 27rpx;
+    color: #f43c00;
+}
+
+.paytype {
+    overflow: hidden;
+    border-top: 18rpx solid #f7f7f7;
+    background-color: #fff;
+}
+
+.tit {
+    margin-left: 30rpx;
+    margin-top: 24rpx;
+    margin-bottom: 25rpx;
+    line-height: 38rpx;
+    font-size: 27rpx;
+    color: #303030;
+    font-weight: 700;
+}
+
+.wxpay {
+    display: flex;
+    align-items: center;
+    height: 103rpx;
+    margin-left: 48rpx;
+    border-top: 1px solid #ededed;
+}
+
+.wx {
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 31rpx;
+}
+
+.text {
+    flex: 1;
+    line-height: 38rpx;
+    font-size: 27rpx;
+}
+
+.check {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 30rpx;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 116rpx;
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    flex: 1;
+    height: 116rpx;
+    text-align: center;
+    line-height: 116rpx;
+    background-color: #fff;
+}
+
+.price span {
+    font-weight: 700;
+    color: #e13a3b;
+}
+
+.pay {
+    flex: 1;
+    width: 375rpx;
+    height: 116rpx;
+    line-height: 116rpx;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30rpx;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(111, 190, 255, 1) 0%, rgba(60, 137, 255, 1) 100%);
+}

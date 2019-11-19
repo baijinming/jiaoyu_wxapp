@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "i-load-more": "/component/load-more/index"
+    },
+    "enablePullDownRefresh": true,
+    "navigationBarTitleText": "我的问答"
+}

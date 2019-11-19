@@ -1,0 +1,26 @@
+<view style='height:33rpx;'></view>
+<view class='banner'>
+    <swiper class='swiper' interval='5000' circular autoplay>
+        <swiper-item class='swiper-item' wx:for='{{banner}}' wx:key="{{index}}">
+            <image src='{{item.imageurl}}' class='img'></image>
+        </swiper-item>
+    </swiper>
+</view>
+<view class='title'>
+    <image src='../../images/survey.png' class='icon'></image>
+    <view class='text'>专业测评项目</view>
+</view>
+<view class='item' bindtap='open' wx:for="{{list}}" wx:key="{{index}}" data-id="{{item.id}}">
+    <view class='img'>
+        <image src='{{item.image}}'  class='img'></image>
+    </view>
+    <view class='info'>
+        <view class='name'>{{item.name}}</view>
+        <view class='brief'>{{item.introduce}}</view>
+        <view class='blank'>
+            <view class='user'>{{item.tag}}</view>
+            <view class='price'>¥{{item.price}}</view>
+            <view class='sales'>{{item.buy_numbers}}人已购买</view>
+        </view>
+    </view>
+</view>

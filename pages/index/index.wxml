@@ -1,0 +1,99 @@
+<!-- 优惠券 -->
+<navigator wx:if="{{couponList[0]}}" url="/pages/coupon-detail/coupon-detail?id={{couponList[0].id}}">
+  <image class="conupon" src="../../images/coupon.png"></image>
+</navigator>
+<view class='head'>
+    <view class='search' bindtap='handleSearch'>
+        <image class='icon' src='../../images/search.png'></image>
+        <view class='text'>大家都在搜“家长课程”</view>
+    </view>
+    <image class='message' src='../../images/message.png' bindtap='handleMessage'></image>
+</view>
+<view class='banner'>
+    <swiper class='swiper' interval='5000' circular autoplay>
+        <swiper-item class='swiper-item' wx:for='{{banner}}' wx:key="{{index}}">
+            <image src='{{item.imageurl}}' class='img'> </image>
+        </swiper-item>
+    </swiper>
+</view>
+<view class='menuwrap'>
+    <view class='menu' wx:for="{{menu}}" data-url="{{item.url}}" bindtap='handleMenu' wx:key="{{index}}" data-id='{{item.id}}'>
+        <image class='icon' src='{{item.icon}}'></image>
+        <view class='text'>{{item.text}}</view>
+    </view>
+</view>
+<view class='titlewrap'>
+    <view class='title'>热门课程</view>
+    <view class='more' catchtap='hotmore'>查看更多</view>
+    <image class='icon' src='../../images/more.png'></image>
+</view>
+<view>
+    <view class='lesson' wx:for="{{hot}}" bindtap='open' data-course_id="{{item.id}}" wx:key="{{index}}">
+        <view class='img'>
+            <image src='{{item.image}}' class='img'></image>
+        </view>
+        <view class='info'>
+            <view class='name'>{{item.name}}</view>
+            <view class='brief van-ellipsis'>{{item.introduce}}</view>
+            <view class='blank'>
+                <block wx:if="{{item.price!=0}}">
+                    <view class='price'>
+                        <span>¥</span>{{item.price}}
+                    </view>
+                    <view class='cost'>¥{{item.origin_price}}</view>
+                </block>
+                <view wx:else class='free'>
+                    免费
+                </view>
+                <!-- <view class='time'>{{item.chapters}}课</view> -->
+                <view class='amount'>{{item.buy_numbers}}人购买</view>
+                <image class='like' src='../../images/like.png'></image>
+                <view class='amount'>{{item.thumbs}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class='banner2'>
+     <swiper class="banner2-swiper" interval='5000' circular autoplay>
+        <swiper-item class="banner2-swiper-item" wx:for='{{minPic}}' wx:key="{{index}}">
+            <image src='{{item.imageurl}}' mode="aspectFill" class='banner2-image'> </image>
+        </swiper-item>
+    </swiper>
+</view>
+<view class='line'></view>
+<view class='titlewrap'>
+    <view class='title2'>专题推荐</view>
+   <navigator hover-class="none" url='/pages/lesson-v/lesson-v?type=specials' class='more'>查看更多</navigator>
+    <image class='icon' src='../../images/more.png'></image>
+</view>
+<view class='tabwrap'>
+    <view class='tab {{tabIdx==index?"active":""}}' data-idx='{{index}}' bindtap='handleTab' wx:for="{{specials}}"  wx:key ="{{index}}">{{item.name}}</view>
+</view>
+<view>
+    <block  wx:for="{{specials}}" wx:if="{{tabIdx==i}}" wx:for-item="v" wx:for-index="i" wx:key="i">
+        <view class='lesson' bindtap='open' data-course_id="{{item.id}}" wx:for="{{v.courses.data}}" wx:key="index" >
+                <view class='img'>
+                    <image src='{{item.image}}' class='img'></image>
+                </view>
+                <view class='info'>
+                    <view class='name'>{{item.name}}</view>
+                    <view class='brief'>{{item.introduce}}</view>
+                    <view class='blank'>
+                        <block wx:if="{{item.price != 0}}">
+                            <view class='price'>
+                                <span>¥</span>{{item.price}}
+                            </view>
+                            <view class='cost'>¥{{item.origin_price}}</view>
+                        </block>
+                        <view wx:else class='free'>
+                            免费
+                        </view>
+                        <view class='time'>{{item.chapters}}课</view>
+                        <view class='amount'>{{item.buy_numbers}}人购买</view>
+                        <image class='like' src='../../images/like.png'></image>
+                        <view class='amount'>{{item.thumbs}}</view>
+                    </view>
+                </view>
+        </view>
+    </block>
+</view>

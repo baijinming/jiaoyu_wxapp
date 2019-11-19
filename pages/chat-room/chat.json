@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "chat-title": "/component/chat/title",
+    "chat-swifter": "/component/chat/swifter",
+    "chat-popup": "/component/chat/before"
+
+  },
+  "navigationBarTitleText": "聊天室"
+}

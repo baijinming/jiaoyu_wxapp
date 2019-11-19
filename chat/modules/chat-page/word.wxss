@@ -1,0 +1,113 @@
+@import "voice.wxss";
+.isMyWordStyle {
+    background-color: #8fcbf7;
+    color: #213d52;
+    margin-right: -1rpx;
+    margin-left: 14rpx;
+    word-wrap: break-word;
+}
+
+.isOtherWordStyle {
+    background-color: #8fcbf7;
+    color: #4c4c4c;
+    margin-right: 14rpx;
+    margin-left: -1rpx;
+    word-wrap: break-word;
+}
+
+.chat-list-pic-style {
+    border-radius: 10rpx;
+    margin: 0 5rpx;
+    width: 150rpx;
+    height: 280rpx;
+}
+
+.voice-duration-style {
+    color: #666666;
+    font-size: 26rpx;
+    align-self: center;
+    /* margin-top: 3rpx; */
+    margin-left: 10rpx;
+}
+
+.chat-list-arrow-style {
+    width: 11rpx;
+    height: 20rpx;
+    margin-top: 25rpx
+}
+
+.file-icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+}
+
+.file-name {
+  color: #222;
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-size {
+  color: #999;
+  font-size: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.name {
+  position: absolute;
+  left: 100rpx;
+  top: -30rpx;
+  font-size: 24rpx;
+  color: #4c4c4c;
+  line-height: 1;
+}
+
+.name text {
+  color: #939393;
+  margin-left: 10rpx;
+  font-size: 22rpx;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+/* loading */
+@import "../loading/common.wxss";
+.sendStatusStyle{
+    height:100%;
+    display: flex;
+    align-self: center;
+}
+
+/* time */
+.chat-list-time-style {
+    margin-top: 30rpx;
+    background-color: #cccccc;
+    color: white;
+    padding: 8rpx 10rpx 6rpx 10rpx;
+    border-radius: 6rpx;
+    width: auto;
+    font-size: 22rpx;
+    line-height: 22rpx;
+    text-align: center;
+}
+
+.withdraw-box {
+  position: relative;
+}
+
+.withdraw {
+  color: #999;
+  font-size: 20rpx;
+  line-height: 1;
+  position: absolute;
+  left: -60rpx;
+  bottom: -30rpx;
+}

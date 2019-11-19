@@ -1,0 +1,38 @@
+<view class="head">
+    <view class='info'>
+        <view class='name'>{{info.name}}</view>
+        <view class='brief van-ellipsis'>{{info.flag}}</view>
+        <view class='blank'>
+            <!-- <image class='icon' src='../../images/badge.png'></image> -->
+            <view class='text'>{{info.introduce}}</view>
+        </view>
+    </view>
+    <image class='avatar' src='{{info.image}}'></image>
+</view>
+<view class='title'>老师课程</view>
+<navigator url="/pages/lesson-detail/lesson-detail?course_id={{first.id}}">
+    <image class='banner' src="{{first.image}}"></image>
+</navigator>
+<view class='tit-wrap'>
+    <view class='tit'>{{first.name}}</view>
+    <image class='like' src='../../images/like.png'></image>
+    <view class='likenum'>{{first.thumbs}} </view>
+</view>
+<view class='num-wrap'>
+    <view class='price'>¥{{first.price}}</view>
+    <view class='length'>章节总数：{{first.chapters}}课</view>
+    <view class='sales'>{{first.buy_numbers}}人已购买</view>
+</view>
+<navigator class='lesson' wx:for="{{list}}" url="/pages/lesson-detail/lesson-detail?course_id={{item.id}}">
+    <image class='img' src='{{item.image}}'></image>
+    <view class='linfo'>
+        <view class='lname'>{{item.name}}</view>
+        <view class='lbrief van-ellipsis'>{{item.introduce}}</view>
+        <view class='lblank'>
+            <view class='price'>¥{{item.price}}</view>
+            <view class='length'>章节总数：{{item.chapters}}课</view>
+            <image class='like' src='../../images/like.png'></image>
+            <view class='likenum'>{{item.thumbs}} </view>
+        </view>
+    </view>
+</navigator>

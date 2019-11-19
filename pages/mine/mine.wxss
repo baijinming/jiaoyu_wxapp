@@ -1,0 +1,207 @@
+page {
+    background-color: #fafafa;
+}
+
+.top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 50rpx 60rpx 38rpx 43rpx;
+    background-color: #fff;
+}
+
+.top::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    height: 1px;
+    width: 620rpx;
+    background-color: #f2f2f2;
+}
+
+.avatar {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    background-color: #fbfbfb;
+}
+
+.top .info {
+    flex: 1;
+    margin-left: 34rpx;
+}
+
+.top .name {
+    line-height: 60rpx;
+    font-size: 43rpx;
+    font-weight: 700;
+    color: #303030;
+}
+
+.top .id-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.top .id {
+    line-height: 38rpx;
+    font-size: 27rpx;
+    color: #999;
+}
+
+.top .copy {
+    width: 58rpx;
+    height: 33rpx;
+    margin-left: 14rpx;
+    line-height: 33rpx;
+    text-align: center;
+    font-size: 18rpx;
+    border-radius: 5rpx;
+    color: #fff;
+    background: rgba(216, 216, 216, 1);
+}
+
+.top .setting {
+    width: 54rpx;
+    height: 54rpx;
+}
+
+.hmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40rpx 50rpx 26rpx;
+    border-bottom: 18rpx solid #fafafa;
+    background-color: #fff;
+}
+
+.hmenu .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hmenu .icon {
+    width: 54rpx;
+    height: 54rpx;
+}
+
+.hmenu .text {
+    line-height: 36rpx;
+    font-size: 25rpx;
+    color: #303030;
+    margin-top: 10rpx;
+}
+
+.history {
+    padding: 29rpx 0;
+    border-bottom: 18rpx solid #fafafa;
+    background-color: #fff;
+}
+
+.title-wrap {
+    display: flex;
+    align-items: center;
+    padding-left: 43rpx;
+    padding-right: 27rpx;
+}
+
+.title {
+    flex: 1;
+    line-height: 40rpx;
+    font-size: 29rpx;
+}
+
+.title-wrap .more {
+    font-size: 22rpx;
+    color: #999;
+}
+
+.title-wrap .icon {
+    width: 27rpx;
+    height: 27rpx;
+}
+
+.history .wrap {
+    white-space: nowrap;
+    margin-top: 24rpx;
+}
+
+.wrap
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.history .item {
+    display: inline-block;
+    width: 228rpx;
+    margin: 0 10rpx;
+}
+
+.history .item:first-child {
+    margin-left: 45rpx;
+}
+
+.history .item .img {
+    width: 228rpx;
+    height: 134rpx;
+    background-color: #fbfbfb;
+}
+
+.history .item .brief {
+    width: 228rpx;
+    margin-top: 11rpx;
+    white-space: normal;
+    line-height: 33rpx;
+    font-size: 24rpx;
+    color: #999;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.vmenu {
+    background-color: #fff;
+}
+
+.vmenu .menu {
+    display: flex;
+    align-items: center;
+    padding-left: 33rpx;
+}
+
+.menu:last-child .blank {
+    border-bottom: none;
+}
+
+.menu .icon {
+    width: 45rpx;
+    height: 45rpx;
+}
+
+.menu .blank {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25rpx;
+    padding-right: 29rpx;
+    padding-top: 30rpx;
+    padding-bottom: 25rpx;
+    border-bottom: 1px solid #fafafa;
+}
+
+.menu .text {
+    line-height: 40rpx;
+    font-size: 29rpx;
+    color: #303030;
+}
+
+.menu .more {
+    width: 36rpx;
+    height: 36rpx;
+}

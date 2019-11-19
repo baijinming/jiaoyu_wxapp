@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "i-count-down": "/component/count-down/index",
+        "i-count-downTwo": "/component/count-down2/count-down2"
+    },
+    "navigationBarTitleText": "直播室"
+}

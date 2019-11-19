@@ -1,0 +1,20 @@
+<view class='wrap'>
+    <scroll-view scroll-y style="height:{{height + 'rpx'}}"
+        bindscrolltolower="getList"
+        enable-back-to-top = "{{true}}"
+    >
+        <view class='lesson' wx:for="{{list}}" bindtap='open' wx:key="{{index}}" data-learn_course_id="{{item.id}}">
+            <image src='{{item.image}}' class='img'></image>
+            <view class='info'>
+                <view class='name'>{{item.name}}</view>
+                <view class='brief van-ellipsis'>{{item.introduce}}</view>
+                <view class='blank'>
+                    <view class='sales'>已有{{item.buy_numbers}}人购买</view>
+                    <image class='like' src='../../images/like.png'></image>
+                    <view class='amount'>{{item.thumbs}}</view>
+                </view>
+            </view>
+        </view>
+        <i-load-more tip="{{tip}}" loading="{{ loading }}" />
+    </scroll-view>    
+</view>

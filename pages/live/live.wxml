@@ -1,0 +1,66 @@
+<view style='height:33rpx;'></view>
+<view class='banner'>
+  <swiper class='swiper' interval='2000' circular autoplay>
+    <swiper-item class='swiper-item' wx:for='{{banners}}' wx:key="{{index}}">
+      <image class='img' src='{{item.imageurl}}'></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class='tab-wrap'>
+  <view class='tab {{tabIdx==0?"active":""}}' data-idx='0' bindtap='handleTab'>往期直播</view>
+  <view class='tab {{tabIdx==1?"active":""}}' data-idx='1' bindtap='handleTab'>直播预告</view>
+</view>
+<view style='height:42rpx'></view>
+<block wx:if="{{tabIdx==1}}">
+  <view wx:if="{{!before[0]}}" class="no-live">暂无直播预告</view>
+  <view class='item' wx:for='{{before}}' wx:key="{{index}}">
+    <view class='left'>
+      <view class='date'>{{item.start_time_text[0]}}</view>
+      <view class='time'>{{item.start_time_text[1]}}</view>
+    </view>
+    <view class='mid'>
+      <view class='line1 {{index==0?"transparent":""}}'></view>
+      <view class='dot'></view>
+      <view class='line2 {{index==5?"transparent":""}}'></view>
+    </view>
+    <view class='right'>
+      <view class='name'>{{item.name}}</view>
+      <view class='blank'>
+        <image class='avatar' src='{{item.talk_info.avatar}}'></image>
+        <view class='teacher'>讲师：{{item.talk_info.nickname}}</view>
+      </view>
+      <view class="mask" bindtap='chat' data-id="{{item.id}}" data-start_time="{{item.start_time}}" data-type="{{item.type}}"></view>
+      <view wx:if='{{item.user_auth == 1 && item.type == 1}}' class='end' bindtap="end" data-id="{{item.room_id}}" data-course_id="{{item.edu_learn_course_id}}">结束直播</view>
+      <view wx:if='{{item.user_auth == 0 && item.type == 1}}' class='end' bindtap='chat' data-id="{{item.id}}" data-start_time="{{item.start_time}}" data-type="{{item.type}}">进入直播室</view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class='titlewrap'>
+    <view class='title2'>系列课</view>
+    <view class='more' catchtap='toMore'>查看更多</view>
+    <image class='icon' src='../../images/more.png'></image>
+  </view>
+  <view class='lesson' wx:for="{{list}}" bindtap='open' wx:key="{{index}}" data-id="{{item.id}}">
+    <image class='img' src='{{item.image}}'></image>
+    <view class='info'>
+      <view class='name'>{{item.name}}</view>
+      <view class='brief'>{{item.introduce}}</view>
+      <view class='blank'>
+        <block wx:if="{{item.price != 0}}">
+          <view class='price'>
+            <span>¥</span>{{item.price}}
+          </view>
+          <view class='cost'>¥{{item.origin_price}}</view>
+        </block>
+        <view wx:else class='free'>
+          免费
+        </view>
+        <view class='time'>{{item.chapters}}课</view>
+        <view class='amount'>{{item.buy_numbers}}人购买</view>
+        <image class='like' src='../../images/like.png'></image>
+        <view class='amount'>{{item.thumbs}}</view>
+      </view>
+    </view>
+  </view>
+</block>

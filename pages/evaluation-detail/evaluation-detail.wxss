@@ -1,0 +1,88 @@
+@import "/wxParse/wxParse.wxss";
+.head {
+    /* display: flex; */
+    padding: 30rpx;
+    border-bottom: 18rpx solid #fafafa;
+}
+
+.img {
+    width: 690rpx;
+    height: 400rpx;
+    border-radius: 10rpx;
+    background-color: #fbfbfb;
+}
+
+.info {
+    /* flex: 1; */
+    /* margin-left: 38rpx; */
+    padding-top: 30rpx;
+}
+
+.title {
+    line-height: 45rpx;
+    font-size: 33rpx;
+    font-weight: 700;
+    color: #303030;
+}
+
+.brief {
+    margin-top: 20rpx;
+    line-height: 33rpx;
+    font-size: 24rpx;
+    color: #999;
+}
+
+.content {
+    padding: 20rpx 0 110rpx;
+}
+
+.price {
+    line-height: 65rpx;
+    font-size: 45rpx;
+    font-weight: 700;
+    color: #f42900;
+    padding-left: 33rpx;
+}
+
+.sale {
+    padding-bottom: 29rpx;
+    border-bottom: 1px solid #fafafa;
+    line-height: 36rpx;
+    font-size: 25rpx;
+    color: #999;
+    padding-left: 33rpx;
+}
+
+.tit {
+    margin: 25rpx auto;
+    line-height: 45rpx;
+    font-size: 33rpx;
+    font-weight: 700;
+    padding-left: 33rpx;
+}
+
+.text {
+    line-height: 53rpx;
+    font-size: 24rpx;
+    color: #303030;
+}
+
+.texe{
+  width: 750rpx;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+
+.btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 750rpx;
+    height: 98rpx;
+    line-height: 98rpx;
+    text-align: center;
+    font-size: 34rpx;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(111, 190, 255, 1) 0%, rgba(60, 137, 255, 1) 100%);
+}

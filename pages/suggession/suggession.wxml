@@ -1,0 +1,9 @@
+<view class='sug-class'>
+  <textarea placeholder='请提供您宝贵的意见，我们将不断完善' placeholder-class="place-class" class='suggession' value="{{suggessin}}" bindinput="changevalue">
+  
+  </textarea>
+</view>
+
+<view class='button-su' catchtap='submit'>
+  <text>提交</text>
+</view>
